@@ -5,10 +5,10 @@
 
 <nav id="menu">
   <ul>
-    <li>logo</li>
+    <li class="logo"><a href="/index">MATCH<span>WINNER</span></a></li>
     <li><a href="/about">Om os</a></li>
     <li><a href="/shop">Shop</a></li>
-    <li>Abonnoment</li>
+    <li><a href="/abonnement">Abonnement</a></li>
   </ul>
   <script src="../scripts/menu.js"></script>
 </nav>
@@ -26,10 +26,32 @@
     position: relative;
     z-index: 2;
   }
-
+  @media (min-width: 820px) {
+    .logo {
+      font-family: "Inconsolata", monospace;
+      font-family: "Inter", sans-serif;
+      text-align: center;
+    }
+    span {
+      font-weight: bold;
+      font-family: "Inconsolata", monospace;
+      font-family: "Inter", sans-serif;
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      text-decoration: none;
+    }
+  }
   @media screen and (max-width: 900px) {
-    .logo-drop {
-      display: none;
+    .logo {
+      font-family: "Inconsolata", monospace;
+      font-family: "Inter", sans-serif;
+    }
+    span {
+      font-weight: bold;
+      font-family: "Inconsolata", monospace;
+      font-family: "Inter", sans-serif;
     }
     #burger-menu {
       display: block;
@@ -97,7 +119,6 @@
       visibility: visible;
       opacity: 1;
       padding-top: 100px;
-      background: rgba(0, 0, 0, 0.8);
     }
     #menu ul {
       padding: 0;
@@ -110,6 +131,8 @@
     #menu li {
       list-style: none;
       display: initial;
+      font-family: "Inconsolata", monospace;
+      font-family: "Inter", sans-serif;
     }
     #menu a {
       color: black;
