@@ -6,6 +6,7 @@
 <nav id="menu">
   <ul>
     <li class="logo"><a href="/index">MATCH<span>WINNER</span></a></li>
+    <div class="line"></div>
     <li class="nav-right">
       <a href="/about">Om os</a>
       <a href="/shop">Shop</a>
@@ -16,6 +17,10 @@
 <script src="../scripts/menu.js"></script>
 
 <style>
+  @font-face {
+    font-family: Inter;
+    src: url(Inter-VariableFont_slntwght.ttf);
+  }
   #burger-menu {
     text-indent: -9999px;
     display: none;
@@ -30,9 +35,8 @@
   }
   @media (min-width: 820px) {
     .logo {
-      font-family: "Inconsolata", monospace;
-      font-family: "Inter", sans-serif;
       text-align: center;
+      font-size: 45px;
     }
     span {
       font-weight: bold;
@@ -62,6 +66,11 @@
     }
     a:hover {
       color: #87b18b;
+    }
+    .line {
+      border-bottom: black solid 1px;
+      max-width: 1000px;
+      margin: auto;
     }
   }
   @media screen and (max-width: 900px) {
