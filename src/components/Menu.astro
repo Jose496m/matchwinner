@@ -6,12 +6,14 @@
 <nav id="menu">
   <ul>
     <li class="logo"><a href="/index">MATCH<span>WINNER</span></a></li>
-    <li><a href="/about">Om os</a></li>
-    <li><a href="/shop">Shop</a></li>
-    <li><a href="/abonnement">Abonnement</a></li>
+    <li class="nav-right">
+      <a href="/about">Om os</a>
+      <a href="/shop">Shop</a>
+      <a href="/abonnement">Abonnement</a>
+    </li>
   </ul>
-  <script src="../scripts/menu.js"></script>
 </nav>
+<script src="../scripts/menu.js"></script>
 
 <style>
   #burger-menu {
@@ -39,8 +41,27 @@
       text-align: center;
     }
     ul {
-      list-style-type: none;
       text-decoration: none;
+      list-style: none;
+      display: inline;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-family: Montserrat;
+    }
+    .nav-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5%;
+      margin-top: 2%;
+      text-decoration: none;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      color: #87b18b;
     }
   }
   @media screen and (max-width: 900px) {
@@ -53,6 +74,7 @@
       font-family: "Inconsolata", monospace;
       font-family: "Inter", sans-serif;
     }
+
     #burger-menu {
       display: block;
     }
