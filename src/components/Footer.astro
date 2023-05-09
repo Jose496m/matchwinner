@@ -66,7 +66,7 @@
     display: inline;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   a {
     text-decoration: none;
@@ -87,12 +87,55 @@
     margin: auto;
     text-align: center;
     margin-top: 50px;
-    font-family: "Inter",sans-serif;
+    font-family: "Inter", sans-serif;
   }
   p {
     line-height: 5px;
   }
 
-  
-
+  @media (max-width: 800px) {
+    .grid3_3 {
+      display: block;
+      font-weight: 150;
+      font-size: small;
+      margin-top: 20px;
+    }
+    .credit {
+      font-weight: 200;
+      font-size: x-small;
+      margin-top: 50px;
+    }
+    a:hover {
+      color: black;
+    }
+    li {
+      font-size: small;
+      margin: auto;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-align: center;
+      .line {
+        border-bottom: black solid 1px;
+        max-width: 1000px;
+        margin: auto;
+      }
+      li {
+        text-decoration: none;
+        list-style: none;
+      }
+      ul {
+        padding-left: 0;
+      }
+      .line {
+        max-width: 270px;
+      }
+      .info {
+        line-height: 10px;
+        margin-top: 15px;
+      }
+      p {
+        line-height: 2px;
+      }
+    }
+  }
 </style>
