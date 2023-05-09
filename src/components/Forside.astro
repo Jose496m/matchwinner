@@ -3,20 +3,124 @@
     <img class="forside1" src="img/forside.webp" alt="forside" />
   </div>
   <div>
-    <h2>SE ALLE VORES <span> MYSTERY</span><span>BOXES</span> HER</h2>
+    <h1>
+      SE ALLE VORES <span class="mystery">MYSTERY</span><span class="box"
+        >BOXES</span
+      >
+      <a href="/shop">HER</a>
+    </h1>
+  </div>
+
+  <div class="abbonement">
+    <h2>
+      OPRET ET ABBONEMENT OG <span class="måned"> FÅ ÉN BOX HVER MÅNED</span> TIL
+      KUN 349 DKK
+    </h2>
+    <h3>Ingen binding - opsig når som helst</h3>
+  </div>
+
+  <div>
+    <img class="koncept" src="img/koncept.webp" alt="koncept" />
+  </div>
+  <div class="tekst">
+    <h2>Matchwinner er et helt nyt koncept i Danmark.</h2>
+    <p>
+      Hos Matchwinner sælger vi mystery boxes med helt nye og 100% originale
+      fodboldtrøjer, som har en minimum vejledende pris på 600 kr. Du har derfor
+      muligheden for at udvide din fodboldtrøje samling med forskellige
+      spændende trøjer fra hele verden! Vi går meget op i, at vores kunder er
+      tilfredse. Derfor tilbyder vi, at du kan vælge 1 hold, som du absolut IKKE
+      vil modtage i din Mysterybox. Skulle du være så uheldig alligevel at
+      modtage en trøje fra et hold, som du ikke ønsker, så frygt ej. Du kan
+      altid inden for 14 dage returnere dine varer til Matchwinner, så længe
+      trøjen stadig er med tags!
+    </p>
   </div>
 </section>
 
 <style>
+  @font-face {
+    font-family: Inter;
+    src: url("fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat-VariableFont_wght.ttf");
+  }
   @media (max-width: 600px) {
     .forside1 {
-      width: 100%;
+      width: 101%;
+    }
+    h1 {
+      text-align: center;
+      font-family: "Inter";
+      font-weight: lighter;
+      font-size: 20px;
+    }
+    .mystery {
+      font-weight: bolder;
+      color: #6d9a72;
+    }
+    .box {
+      font-weight: bolder;
     }
   }
 
   @media (min-width: 820px) {
     .forside1 {
-      width: 100%;
+      width: 101%;
+    }
+    h1 {
+      text-align: center;
+      font-family: "Inter";
+      font-weight: lighter;
+    }
+    .mystery {
+      font-weight: bolder;
+      color: #6d9a72;
+    }
+    .box {
+      font-weight: bolder;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    h2 {
+      font-family: "Inter";
+      font-weight: lighter;
+      text-align: center;
+    }
+    .måned {
+      font-weight: bolder;
+    }
+    h3 {
+      font-family: "Inter";
+      font-weight: lighter;
+      text-align: center;
+    }
+    .abbonement {
+      padding: 1px;
+      background-color: #6d9a72;
+      margin: 23%;
+      margin-top: 5%;
+    }
+    .koncept {
+      width: 101%;
+      height: 500px;
+    }
+    p {
+      font-family: "Monsserrat";
+      text-align: center;
+      margin: 16%;
+      margin-top: 3%;
+      line-height: 35px;
+    }
+    .tekst {
+      background-color: #e8efe5;
+      margin: -1%;
+      padding: 3%;
+      margin-bottom: 1%;
     }
   }
 </style>
