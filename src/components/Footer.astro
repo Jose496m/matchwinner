@@ -8,8 +8,8 @@
   <div class="line"></div>
 
   <section class="grid3_3">
-    <div>
-      <a href="https://www.tiktok.com/@matchwinnerdk"
+    <div class="plads">
+      <a class="tiktok" href="https://www.tiktok.com/@matchwinnerdk"
         ><img src="img/tiktok.webp" alt="TikTok icon" /></a
       >
       <a href="https://www.instagram.com/matchwinnerdk/?hl=da"
@@ -40,10 +40,10 @@
     font-family: Montserrat;
     src: url("fonts/Montserrat-VariableFont_wght.ttf");
   }
-  @font-face {
+ @font-face{
     font-family: Inter;
-    src: url("fonts/Inter-VariableFont_slntwght.ttf");
-  }
+    src: url("fonts/Inter-VariableFont_slnt,wght.ttf");
+ }
   .ryk-ikon {
     position: relative;
     left: 7px;
@@ -53,6 +53,7 @@
     justify-content: center;
     text-align: center;
     margin-bottom: 10px;
+    padding: 0;
   }
 
   .line {
@@ -79,6 +80,8 @@
     text-align: center;
     margin-top: 100px;
     font-family: Inter;
+    font-size:small;
+    font-weight: 150;
   }
   .grid3_3 {
     display: grid;
@@ -87,11 +90,20 @@
     margin: auto;
     text-align: center;
     margin-top: 50px;
-    font-family: "Inter", sans-serif;
+    font-family: Inter;
+    font-weight: 200;
   }
   p {
     line-height: 5px;
+    margin-top: 13px;
   }
+  .tiktok{
+    position: relative;
+    left: -2px
+  }
+   #info {
+        line-height: 10px;
+      }
 
   @media (max-width: 800px) {
     .grid3_3 {
@@ -114,11 +126,13 @@
       margin-left: 5px;
       margin-right: 5px;
       text-align: center;
+      }
       .line {
         border-bottom: black solid 1px;
         max-width: 1000px;
         margin: auto;
       }
+      .plads{margin-bottom: 10px;}
       li {
         text-decoration: none;
         list-style: none;
@@ -129,13 +143,10 @@
       .line {
         max-width: 270px;
       }
-      .info {
-        line-height: 10px;
-        margin-top: 15px;
-      }
       p {
-        line-height: 2px;
+        line-height: 5px;
+        margin-top: 10px;
       }
     }
-  }
+  
 </style>
