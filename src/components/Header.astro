@@ -1,1 +1,53 @@
 
+<div class="grid1_1">
+    <div>
+    <p>DIN INDKØBSKURV</p>
+    <p class="farve">0 varer  0,00 DKK</p>
+</div>
+
+<div>
+    <img src="img/vogn.webp" alt="indkøbsvogn" srcset="">
+</div>
+</div>
+
+
+<style>
+    .grid1_1{
+display: grid;
+grid-template-columns: 2fr 1fr;
+max-width: 250px;
+margin-top: 30px;
+margin-left: 78%;
+margin-bottom: -70px;
+    }
+    img{
+        margin-top: 7px;
+        width: 35%;
+        margin-left: 5px;
+    }
+    p{
+        font-family: Inter;
+        line-height: 5px;
+        font-size:small; 
+        text-align: right;
+        font-weight: 300;
+    }
+    .farve{
+        color: #6d9a72;
+    }
+    @media (max-width: 600px){
+.grid1_1{
+    margin-left: 60%;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 20px;
+}
+img{
+    width: 42%;
+    margin-top: 5px;
+}
+p{
+    font-size:x-small;
+    line-height: 3px;
+}
+    }
+</style>
