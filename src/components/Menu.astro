@@ -6,16 +6,16 @@
 <nav id="menu">
   <ul>
     <li class="logo">
-      <a href="/index.html"
+      <a class="nohover" href="/index.html"
         ><span class="match">MATCH</span><span class="winner">WINNER</span></a
       >
     </li>
 
     <div class="line"></div>
     <li class="nav-right">
-      <a href="/shop">Shop</a>
-      <a href="/about">Koncept</a>
-      <a href="/abonnement">Abonnement</a>
+      <a class="my-hover" href="/shop">Shop</a>
+      <a class="my-hover" href="/about">Koncept</a>
+      <a class="my-hover" href="/abonnement">Abonnement</a>
     </li>
   </ul>
 </nav>
@@ -43,6 +43,10 @@
     z-index: 2;
   }
   @media (min-width: 820px) {
+    a.nohover:hover {
+      text-decoration: none;
+    }
+
     .logo {
       text-align: center;
       font-size: 40px;
@@ -51,6 +55,7 @@
       letter-spacing: -1px;
       margin-bottom: 10px;
     }
+
     .winner {
       font-weight: bolder;
       font-family: "Inter";
@@ -82,9 +87,10 @@
       text-decoration: none;
       color: black;
     }
-    a:hover {
+    a.my-hover:hover {
       color: #87b18b;
     }
+
     .line {
       border-bottom: black solid 1px;
       max-width: 1000px;
