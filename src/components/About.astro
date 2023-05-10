@@ -1,7 +1,7 @@
 <img class="koncept" src="img/koncept.webp" alt="koncept">
 <div class="green">
     <h1 class="hev">HVEM ER VI?</h1>
-    <p>Matchwinner er et helt nyt koncept i Danmark. </br>
+    <p class="str">Matchwinner er et helt nyt koncept i Danmark. </br>
 
 Hos Matchwinner sælger vi mystery boxes med helt nye og 100% originale fodboldtrøjer, som har en minimum vejledende pris på 600 kr. Du har derfor muligheden for at udvide din fodboldtrøje samling med forskellige spændende trøjer fra hele verden! </br>
 Vi går meget op i, at vores kunder er tilfredse. Derfor tilbyder vi, at du kan vælge 1 hold, som du absolut IKKE vil modtage i din Mysterybox. Skulle du være så uheldig alligevel at modtage en trøje fra et hold, som du ikke ønsker, så frygt ej. Du kan altid inden for 14 dage returnere dine varer til Matchwinner, så længe trøjen stadig er med tags!</p>
@@ -26,7 +26,7 @@ Vi går meget op i, at vores kunder er tilfredse. Derfor tilbyder vi, at du kan 
 <a class="knap border" href="/shop">SHOP HER</a>
 
 <style>
-@media (min-width: 820px) {
+  body{margin: 0;}
 .ikon {
     display: flex;
     margin: auto;
@@ -40,6 +40,7 @@ Vi går meget op i, at vores kunder er tilfredse. Derfor tilbyder vi, at du kan 
     height: auto;
     margin: auto;
     margin-top: 10px;
+    margin-bottom: -22px;
 }
 .lastbil {
     max-height: 90px;
@@ -64,16 +65,19 @@ Vi går meget op i, at vores kunder er tilfredse. Derfor tilbyder vi, at du kan 
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-size: large;
+    font-size: medium;
   }
   p {
     margin: auto;
-    max-width: 900px;
+    max-width: 350px;
     text-align: center;
-    font-size: large;
+    font-size: medium;
     line-height: 32px;
     margin-bottom: 30px;
-    font-family: "Inter";
+    font-family: Montserrat;
+  }
+  .str{
+    max-width: 750px;
   }
    br {
     margin-bottom: 1rem;
@@ -104,29 +108,43 @@ Vi går meget op i, at vores kunder er tilfredse. Derfor tilbyder vi, at du kan 
 .border {
   border-color: #6D9A72;
   color: #6D9A72;
-  border
 }
 
 .border:hover {
   background-color: #6D9A72;
   color: white;
 }
-}
+
 
 @media (max-width: 600px) {
      p {
       margin: auto;
-      max-width: 300px;
+      max-width: 350px;
       text-align: center;
       margin-bottom: 20px;
-
+      font-size: small;
+      line-height: 25px;
+       font-size: 14px;
+    }
+    h1{
+      font-size: larger;
+    }
+    .str{
+      max-width: 320px;
+      line-height: 25px
     }
     br {
       margin-bottom: 1.6rem;
     }
      .hev {
     padding-top: 40px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
+  }
+  .ikon{
+    margin-top: 3rem;
+  margin-bottom: -1rem;}
+   .hiw {
+    margin-top: 50px;
   }
 }
 </style>
