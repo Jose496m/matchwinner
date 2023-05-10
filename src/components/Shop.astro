@@ -1,6 +1,6 @@
 <img class="shop" src="img/shop.webp" alt="shop" />
 <h1>ALLE PRODUKTER</h1>
-<section class="grid_1-1-1-1-1">
+<section class="grid_1-1-1-1">
   <div>
     <img class="billeder" src="img/legendariske.webp" alt="billede1" />
   </div>
@@ -16,12 +16,12 @@
 </section>
 <section>
   <div>
-    <p>Den mest spændende måde, at udvide din fodboldtrøje samling på</p>
+    <p>Den mest spændende måde, at udvide din fodboldtrøje samling på.</p>
   </div>
   <div>
-    <p>
+    <p class="usp">
       Ethvert <span>hold</span>, enhver <span>liga</span>, enhver <span
-        >ære</span
+        >ære.</span
       >
     </p>
   </div>
@@ -37,9 +37,9 @@
     </h3>
   </div>
   <div class="grid_2-2">
-    <img class="billeder1 leg" src="img/aboleg.webp" alt="billede5" />
+    <img class="leg" src="img/aboleg.webp" alt="billede5" />
 
-    <img class="billeder1 uni" src="img/abounik.webp" alt="billeder6" />
+    <img class="uni" src="img/abounik.webp" alt="billeder6" />
   </div>
   <div>
     <a class="knap border" href="/abonnement">LÆS MERE</a>
@@ -74,32 +74,42 @@
     .leg {
     margin-inline-end: 3rem;
     margin-bottom: 4rem;
+    margin-top: 2rem;
     transition: transform .2s;
   }
   .uni {
     margin-inline-start: 3rem;
     margin-bottom: 4rem;
+    margin-top: 2rem;
     transition: transform .2s;
   }
     .leg:hover, .uni:hover, .billeder:hover{
     transform: scale(1.12);
   }
-  @media (min-width: 600px) {
+  .usp {
+    font-size: larger;
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
     h1 {
       text-align: center;
       font-family: Inter;
+      margin-top: 2.7rem;
     }
-    .grid_1-1-1-1-1 {
+    .grid_1-1-1-1 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .billeder {
-      max-width: 70%;
-      margin: 50px;
+      margin: auto;
+      margin-bottom: 50px;
+      margin-top: 40px;
+      width: 80%;
+      height: auto;
     }
     p {
       text-align: center;
-      font-family: Montsserat;
+      font-family: Montserrat;
     }
     span {
       font-weight: bolder;
@@ -121,6 +131,7 @@
     .background {
       background-color: #e8efe5;
       padding-bottom: 1%;
+      margin-bottom: 6rem;
     }
     .tekst {
       margin-top: 1rem;
@@ -153,5 +164,4 @@
   background-color: #6D9A72;
   color: white;
 }
-  }
 </style>
