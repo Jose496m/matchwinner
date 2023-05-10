@@ -37,9 +37,9 @@
     </h3>
   </div>
   <div class="grid_2-2">
-    <img class="billeder1" src="img/aboleg.webp" alt="billede5" />
+    <img class="billeder1 leg" src="img/aboleg.webp" alt="billede5" />
 
-    <img class="billeder1" src="img/abounik.webp" alt="billeder6" />
+    <img class="billeder1 uni" src="img/abounik.webp" alt="billeder6" />
   </div>
   <div>
     <a class="knap border" href="/abonnement">LÆS MERE</a>
@@ -63,6 +63,26 @@
     height: auto;
     margin: auto;
     margin-top: 10px;
+  }
+     img {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+    .leg {
+    margin-inline-end: 3rem;
+    margin-bottom: 4rem;
+    transition: transform .2s;
+  }
+  .uni {
+    margin-inline-start: 3rem;
+    margin-bottom: 4rem;
+    transition: transform .2s;
+  }
+    .leg:hover, .uni:hover, .billeder:hover{
+    transform: scale(1.12);
   }
   @media (min-width: 600px) {
     h1 {
@@ -88,13 +108,7 @@
       display: grid;
       grid-template-columns: 2fr 2fr;
     }
-    .billeder1 {
-      max-width: 50%;
-      margin: 25%;
-      height: auto;
-      margin-top: 10%;
-      margin-bottom: 4rem;
-    }
+   
     h2 {
       text-align: center;
       font-family: Inter;
@@ -135,5 +149,9 @@
       border-color: #6d9a72;
       color: #6d9a72;
     }
+    .border:hover {
+  background-color: #6D9A72;
+  color: white;
+}
   }
 </style>
