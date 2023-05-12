@@ -1,5 +1,87 @@
 <section>
   <div>
-    <img src="img/box.svg" alt="box" />
+    <img class="box" src="img/box.svg" alt="box" />
+  </div>
+  <div>
+    <h1>Den Legendariske Box</h1>
+    <p class="pris">389kr.</p>
+  </div>
+  <div class="tekst1">
+    <p>Vælg størrelse</p>
   </div>
 </section>
+<section class="grid_7">
+  <div>
+    <p class="border">XS</p>
+  </div>
+  <div>
+    <p class="border">S</p>
+  </div>
+  <div>
+    <p class="border">M</p>
+  </div>
+  <div>
+    <p class="border">L</p>
+  </div>
+  <div>
+    <p class="border">XL</p>
+  </div>
+  <div>
+    <p class="border">XXL</p>
+  </div>
+  <div>
+    <p class="border">XXXL</p>
+  </div>
+</section>
+<section>
+  <div>
+    <h4>
+      Med denne boks vil du modtage en simpel Mystery box, som indeholder en
+      100% original trøje, med en vejledende pris på mindst 600kr.
+    </h4>
+  </div>
+  <div>
+    <h2>Læs mere</h2>
+  </div>
+</section>
+
+<style>
+  @font-face {
+    font-family: Inter;
+    src: url("fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  @media (max-width: 600px) {
+    .box {
+      width: 60%;
+      margin: 20%;
+      margin-top: 0%;
+    }
+    h1 {
+      text-align: center;
+      font-family: Inter;
+    }
+    .pris {
+      text-align: center;
+      font-family: Montserrat;
+    }
+    .tekst1 {
+      font-family: Montserrat;
+    }
+    .grid_7 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .border {
+      background-color: #e8efe5;
+      margin: 1rem;
+      padding: 1rem;
+    }
+  }
+
+  @media (min-width: 900px) {
+  }
+</style>
