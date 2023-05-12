@@ -1,46 +1,49 @@
-<select class="lang" name="sprog" id="lang">
-  <option value="0">DA</option>
-  <option value="1">EN</option>
-  <option value="2">DE</option>
-</select>
+  <select class="lang" name="sprog" id="lang">
+                    <option value="0">DA</option>
+                    <option value="1">EN</option>
+                    <option value="2">DE</option>
+                </select>
+
+
 
 <div class="grid1_1">
-  <div>
+    <div>
     <p>DIN INDKØBSKURV</p>
-    <p class="farve">0 varer 0,00 DKK</p>
-  </div>
-
-  <div>
-    <img src="img/vogn.webp" alt="indkøbsvogn" srcset="" />
-  </div>
+    <p class="farve">0 varer  0,00 DKK</p>
 </div>
 
+<div>
+    <img src="img/vogn.webp" alt="indkøbsvogn" srcset="">
+</div>
+</div>
+
+
 <style>
-  .grid1_1 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    max-width: 250px;
-    margin-left: 78%;
-    margin-bottom: -80px;
-    margin-top: -80px;
-  }
-  img {
-    margin-top: 7px;
-    width: 35%;
-    margin-left: 5px;
-  }
-  p {
-    font-family: Inter;
-    line-height: 4px;
-    font-size: small;
-    text-align: right;
-    font-weight: 250;
-  }
-  .farve {
-    color: #87b18b;
-    font-weight: 550;
-  }
-  .lang {
+    .grid1_1{
+display: grid;
+grid-template-columns: 2fr 1fr;
+max-width: 250px;
+margin-left: 78%;
+margin-bottom: -80px;
+margin-top: -80px;
+    }
+    img{
+        margin-top: 7px;
+        width: 35%;
+        margin-left: 5px;
+    }
+    p{
+        font-family: Inter;
+        line-height: 4px;
+        font-size:small; 
+        text-align: right;
+        font-weight: 250;
+    }
+    .farve{
+        color: #87B18B;
+        font-weight: 550;
+    }
+  .lang{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 4px;
@@ -52,19 +55,24 @@
     margin-left: 8%;
   }
 
-  @media (max-width: 600px) {
-    .grid1_1 {
-      margin-left: 60%;
-      grid-template-columns: 2fr 1fr;
-      margin-top: 20px;
+    @media (max-width: 600px){
+.grid1_1{
+    margin-left: 60%;
+    grid-template-columns: 2fr 1fr;
+    margin-top: -40px;
+    margin-bottom: -60px;
+}
+img{
+    width: 42%;
+    margin-top: 5px;
+}
+p{
+    font-size:x-small;
+    line-height: 3px;
+}
+.lang{
+    visibility: hidden;
+    margin-top: -110px;
+}
     }
-    img {
-      width: 42%;
-      margin-top: 5px;
-    }
-    p {
-      font-size: x-small;
-      line-height: 3px;
-    }
-  }
 </style>
