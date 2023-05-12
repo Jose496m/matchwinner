@@ -2,7 +2,9 @@
 <h1>ALLE PRODUKTER</h1>
 <section class="grid_1-1-1-1">
   <div>
-    <img class="billeder" src="img/legendariske.webp" alt="billede1" />
+    <a href="/leg"
+      ><img class="billeder" src="img/legendariske.webp" alt="billede1" /></a
+    >
   </div>
   <div>
     <img class="billeder" src="img/unikke.webp" alt="billede2" />
@@ -64,26 +66,28 @@
     margin: auto;
     margin-top: -60px;
   }
-     img {
+  img {
     display: flex;
     align-items: center;
     width: 50%;
     margin: auto;
     margin-bottom: 10px;
   }
-    .leg {
+  .leg {
     margin-inline-end: 3rem;
     margin-bottom: 4rem;
     margin-top: 2rem;
-    transition: transform .2s;
+    transition: transform 0.2s;
   }
   .uni {
     margin-inline-start: 3rem;
     margin-bottom: 4rem;
     margin-top: 2rem;
-    transition: transform .2s;
+    transition: transform 0.2s;
   }
-    .leg:hover, .uni:hover, .billeder:hover{
+  .leg:hover,
+  .uni:hover,
+  .billeder:hover {
     transform: scale(1.12);
   }
   .usp {
@@ -92,85 +96,85 @@
     margin-top: 30px;
   }
   .usp2 {
-    font-weight:400;
+    font-weight: 400;
   }
-    h1 {
-      text-align: center;
-      font-family: Inter;
-      margin-top: 2.7rem;
-    }
-    .grid_1-1-1-1 {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .billeder {
-      margin: auto;
-      margin-bottom: 50px;
-      margin-top: 40px;
-      width: 80%;
-      height: auto;
-    }
-    p {
-      text-align: center;
-      font-family: Montserrat;
-    }
-    span {
-      font-weight: bolder;
-    }
-    .grid_2-2 {
-      display: grid;
-      grid-template-columns: 2fr 2fr;
-    }
-   
-    h2 {
-      text-align: center;
-      font-family: Inter;
-      font-size:xx-large;
-    }
-    h3 {
-      text-align: center;
-      font-family: Montserrat;
-      font-weight: lighter;
-    }
-    .background {
-      background-color: #e8efe5;
-      padding-bottom: 1%;
-      margin-bottom: 6rem;
-    }
-    .tekst {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      padding-top: 30px;
-    }
-    .knap {
-      display: flex;
-      justify-content: center;
-      font-family: "Open Sans", sans-serif;
-      max-width: 100px;
-      color: #000000;
-      text-decoration: none;
-      margin: auto;
-      margin-top: 0%;
-      margin-bottom: 1rem;
-      border-radius: 2px;
-      border: 2px solid black;
-      background-color: white;
-      color: black;
-      padding: 14px 28px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    .border {
-      border-color: #6d9a72;
-      color: #6d9a72;
-    }
-    .border:hover {
-  background-color: #6D9A72;
-  color: white;
-}
-@media (max-width: 600px){
-    .shop{
+  h1 {
+    text-align: center;
+    font-family: Inter;
+    margin-top: 2.7rem;
+  }
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .billeder {
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    width: 80%;
+    height: auto;
+  }
+  p {
+    text-align: center;
+    font-family: Montserrat;
+  }
+  span {
+    font-weight: bolder;
+  }
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: Inter;
+    font-size: xx-large;
+  }
+  h3 {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: lighter;
+  }
+  .background {
+    background-color: #e8efe5;
+    padding-bottom: 1%;
+    margin-bottom: 6rem;
+  }
+  .tekst {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 30px;
+  }
+  .knap {
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    max-width: 100px;
+    color: #000000;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 0%;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .border {
+    border-color: #6d9a72;
+    color: #6d9a72;
+  }
+  .border:hover {
+    background-color: #6d9a72;
+    color: white;
+  }
+  @media (max-width: 600px) {
+    .shop {
       margin-top: -55px;
     }
-}
+  }
 </style>
