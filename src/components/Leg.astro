@@ -10,7 +10,7 @@
     <p>Vælg størrelse</p>
   </div>
 </section>
-<section class="grid_7">
+<section class="grid_7 grid.1-1">
   <div>
     <p class="border">XS</p>
   </div>
@@ -55,7 +55,7 @@
   <nav>
     <ul class="menu">
       <li class="parent">
-        PRODUKTINFO
+        <div class="grid-item">PRODUKTINFO</div>
         <ul class="submenu">
           <li>
             Hos Matchwinner vil vi sikre os, at vores kunder altid er tilfredse.
@@ -66,9 +66,8 @@
           </li>
         </ul>
       </li>
-      <div class="line"></div>
       <li class="parent">
-        RETUR / REFUNDERING
+        <div class="grid-item">RETUR / REFUNDERING</div>
         <ul class="submenu">
           <li>
             Hos Matchwinner har du altid 14 dages fortrydelsesret. Du skriver
@@ -79,9 +78,8 @@
           </li>
         </ul>
       </li>
-      <div class="line"></div>
       <li class="parent">
-        FRAGT INFO
+        <div class="grid-item">FRAGT INFO</div>
         <ul class="submenu">
           <li>
             Vi bestræber os på at sende alle ordre samme dag. Du vil derfor
@@ -197,7 +195,6 @@
     nav {
       position: sticky;
       top: 0;
-      background-color: #f2f2f2;
     }
 
     .menu {
@@ -212,10 +209,6 @@
       padding: 10px;
       text-align: center;
       border-right: 1px solid #ccc;
-    }
-
-    .item:last-child {
-      border-right: none;
     }
 
     .submenu {
