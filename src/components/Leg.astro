@@ -35,14 +35,62 @@
 </section>
 <section>
   <div>
+    <p>Læg i kurv</p>
+  </div>
+</section>
+<section>
+  <div>
     <h4>
       Med denne boks vil du modtage en simpel Mystery box, som indeholder en
-      100% original trøje, med en vejledende pris på mindst 600kr.
+      100% original trøje, med en vejledende pris på mindst 600kr. I denne boks
+      vil du modtage en eksklusiv trøje fra et hold der enten spiller eller har
+      spillet i nogle af de største ligaer i verden. Dette kan f.eks. være
+      Premier League, Serie A samt La liga. Udover det kan du også modtage en
+      trøje fra det legendariske landshold. Du kan dog fravælge dette ved
+      checkout.
     </h4>
   </div>
-  <div>
-    <h2>Læs mere</h2>
-  </div>
+</section>
+<section>
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="#">Menu 1</a>
+        <ul class="submenu">
+          <li>
+            PRODUKTINFO Hos Matchwinner vil vi sikre os, at vores kunder altid
+            er tilfredse. Derfor kan du tilføje en note til denne ordre hvor du
+            kan fortælle os ét hold som din trøje absolut IKKE må være fra. Hvis
+            du modtager pakken og alligevel ikke er tilfreds har vi altid 14
+            dages retur på ubrugte trøjer!
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Menu 2</a>
+        <ul class="submenu">
+          <li>
+            RETUR / REFUNDERING Hos Matchwinner har du altid 14 dages
+            fortrydelsesret. Du skriver bare en besked til os på instagram eller
+            her på siden. Så guider vi dig så du super hurtigt og nemt kan
+            returnere din vare. Da vi hos Matchwinner forsøger at have de bedste
+            priser er du selv ansvarlig for eventuelle omkostninger ved
+            returnering/ombytning.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Menu 3</a>
+        <ul class="submenu">
+          <li>
+            FRAGT INFO Vi bestræber os på at sende alle ordre samme dag. Du vil
+            derfor modtage din pakke inden for 2-4 hverdage! Vi sender alle
+            vores pakker med DAO365
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </section>
 
 <style>
@@ -77,6 +125,58 @@
       gap: 10%;
     }
     .border {
+    }
+    h4 {
+      font-family: montserrat;
+      font-weight: lighter;
+      line-height: 20px;
+      padding: 1%;
+      margin-top: 14%;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      position: relative;
+      display: block;
+      text-align: center;
+    }
+
+    .menu li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .menu .submenu {
+      position: absolute;
+      display: none;
+      padding: 0;
+      margin: 0;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu .submenu li {
+      display: block;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    .menu .submenu a {
+      padding: 10px 20px;
+      color: #333;
+    }
+
+    .menu .submenu a:hover {
+      background: #f1f1f1;
     }
   }
 
