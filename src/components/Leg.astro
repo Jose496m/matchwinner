@@ -1,4 +1,4 @@
-<section>
+<section class="grid.1-1">
   <div>
     <img class="box" src="img/box.svg" alt="box" />
   </div>
@@ -51,48 +51,48 @@
     </h4>
   </div>
 </section>
-<section>
+<section class="dropdown grid_1-1-1">
   <nav>
     <ul class="menu">
-      <li>
-        <a href="#">Menu 1</a>
+      <li class="parent">
+        PRODUKTINFO
         <ul class="submenu">
           <li>
-            PRODUKTINFO Hos Matchwinner vil vi sikre os, at vores kunder altid
-            er tilfredse. Derfor kan du tilføje en note til denne ordre hvor du
-            kan fortælle os ét hold som din trøje absolut IKKE må være fra. Hvis
-            du modtager pakken og alligevel ikke er tilfreds har vi altid 14
-            dages retur på ubrugte trøjer!
+            Hos Matchwinner vil vi sikre os, at vores kunder altid er tilfredse.
+            Derfor kan du tilføje en note til denne ordre hvor du kan fortælle
+            os ét hold som din trøje absolut IKKE må være fra. Hvis du modtager
+            pakken og alligevel ikke er tilfreds har vi altid 14 dages retur på
+            ubrugte trøjer!
           </li>
         </ul>
       </li>
-      <li>
-        <a href="#">Menu 2</a>
+      <div class="line"></div>
+      <li class="parent">
+        RETUR / REFUNDERING
         <ul class="submenu">
           <li>
-            RETUR / REFUNDERING Hos Matchwinner har du altid 14 dages
-            fortrydelsesret. Du skriver bare en besked til os på instagram eller
-            her på siden. Så guider vi dig så du super hurtigt og nemt kan
-            returnere din vare. Da vi hos Matchwinner forsøger at have de bedste
-            priser er du selv ansvarlig for eventuelle omkostninger ved
-            returnering/ombytning.
+            Hos Matchwinner har du altid 14 dages fortrydelsesret. Du skriver
+            bare en besked til os på instagram eller her på siden. Så guider vi
+            dig så du super hurtigt og nemt kan returnere din vare. Da vi hos
+            Matchwinner forsøger at have de bedste priser er du selv ansvarlig
+            for eventuelle omkostninger ved returnering/ombytning.
           </li>
         </ul>
       </li>
-      <li>
-        <a href="#">Menu 3</a>
+      <div class="line"></div>
+      <li class="parent">
+        FRAGT INFO
         <ul class="submenu">
           <li>
-            FRAGT INFO Vi bestræber os på at sende alle ordre samme dag. Du vil
-            derfor modtage din pakke inden for 2-4 hverdage! Vi sender alle
-            vores pakker med DAO365
+            Vi bestræber os på at sende alle ordre samme dag. Du vil derfor
+            modtage din pakke inden for 2-4 hverdage! Vi sender alle vores
+            pakker med DAO365
           </li>
         </ul>
       </li>
     </ul>
   </nav>
 </section>
-
 <script src="../scripts/leg.js"></script>
 
 <style>
@@ -136,55 +136,100 @@
       margin-top: 14%;
     }
 
+    nav {
+      position: sticky;
+      top: 0;
+    }
+
     .menu {
       list-style: none;
       padding: 0;
-      margin: 0;
     }
 
-    .menu li {
+    .parent {
       position: relative;
-      display: block;
-      text-align: center;
+      cursor: pointer;
+      padding: 10px;
     }
 
-    .menu li a {
-      display: block;
-      padding: 10px 20px;
-      text-decoration: none;
-      color: #333;
-    }
-
-    .menu .submenu {
-      position: absolute;
+    .submenu {
       display: none;
-      padding: 0;
-      margin: 0;
-      background: #fff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      background-color: #000;
+      color: #fff;
     }
 
-    .menu .submenu li {
+    .parent.active .submenu {
       display: block;
     }
 
-    .menu li:hover .submenu {
-      display: block;
+    .parent.active {
+      background-color: #000;
+      color: #fff;
     }
-
-    .menu .submenu a {
-      padding: 10px 20px;
-      color: #333;
+    .dropdown {
+      background-color: #e8efe5;
+      margin-bottom: 20%;
     }
-
-    .menu .submenu a:hover {
-      background: #f1f1f1;
+    li {
+      text-align: center;
+      font-family: Montsserat;
     }
-    .open {
-      display: block !important;
+    ul {
+      font-family: Inter;
+    }
+    .line {
+      border-bottom: black solid 1px;
+      max-width: 270px;
+      margin: auto;
+      margin-top: 3%;
     }
   }
 
   @media (min-width: 900px) {
+    .grid.1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #f2f2f2;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      list-style: none;
+      padding: 0;
+    }
+
+    .item {
+      cursor: pointer;
+      padding: 10px;
+      text-align: center;
+      border-right: 1px solid #ccc;
+    }
+
+    .item:last-child {
+      border-right: none;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .item:hover .submenu {
+      display: block;
+    }
   }
 </style>
