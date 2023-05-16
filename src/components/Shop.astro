@@ -1,21 +1,19 @@
 <img class="shop" src="/img/shop.webp" alt="shop" />
 <h1>ALLE PRODUKTER</h1>
-<section class="grid_1-1-1-1">
-  <div>
-    <a href="/leg"
-      ><img class="billeder" src="/img/legendariske.webp" alt="billede1" /></a
-    >
+<div class="grid-container grid_1-1-1-1">
+  <div class="grid-item">
+    <img class="billeder" src="/img/legendariske.webp" alt="Billede 1">
   </div>
-  <div>
-    <img class="billeder" src="/img/unikke.webp" alt="billede2" />
+  <div class="grid-item">
+    <img class="billeder" src="/img/unikke.webp" alt="Billede 2">
   </div>
-  <div>
-    <img class="billeder" src="/img/junior.webp" alt="billede3" />
+  <div class="grid-item">
+    <img class="billeder" src="/img/junior.webp" alt="Billede 3">
   </div>
-  <div>
-    <img class="billeder" src="/img/scarf.webp" alt="billede4" />
+  <div class="grid-item">
+    <img class="billeder" src="/img/scarf.webp" alt="Billede 4">
   </div>
-</section>
+</div>
 <section>
   <div>
     <p>
@@ -117,6 +115,7 @@
     text-align: center;
     font-family: Inter;
     font-size: xx-large;
+    padding-top: 2rem;
   }
   h3 {
     text-align: center;
@@ -179,15 +178,49 @@
     h2{
         font-size: 20px;
         padding-top: 30px;
+        }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      margin: auto;
+      margin-top: 4rem;
+      width: 95%;
     }
+
+    .grid-item {
+      text-align: center;
+      margin: -10px;
+    }
+
+    .grid-item img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+     .billeder {
+    margin: auto;
+    margin-bottom: 40px;
+    width: 80%;
+    height: auto;
+  }
     .grid_2-2{
-        max-width: 350px;
-        margin: auto;
+      text-align: center;
+      gap: 5px;
+      margin: auto;
     }
+     .grid_2-2 img {
+      max-width: 100%;
+      max-height: 100%;
+     }
+
     .leg{width: 80%;
     margin-right: 10px;}
     .uni{width: 80%;
     margin-left: 10px;}
-  
+  .leg:hover,
+  .uni:hover,
+  .billeder:hover {
+    transform: none;
+  }
 }
 </style>
