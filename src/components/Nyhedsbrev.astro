@@ -1,0 +1,89 @@
+<div id="newsletter" class="newsletter">
+  <div class="newsletter-content">
+    <h2>Tilmeld dig vores nyhedsbrev</h2>
+    <p>Få de seneste opdateringer direkte i din indbakke.</p>
+    <form id="newsletter-form">
+      <input type="email" placeholder="Indtast din e-mailadresse" required />
+      <button type="submit">Tilmeld</button>
+    </form>
+    <span id="close-newsletter" class="close-button">&times;</span>
+  </div>
+</div>
+
+<script src="../scripts/nyhedsbrev.js"></script>
+
+<style>
+  @font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  .newsletter-content {
+    text-align: center;
+  }
+  h2 {
+    font-size: 25px;
+    font-family: Inter;
+  }
+  p {
+    font-size: 11px;
+    font-family: Montserrat;
+  }
+
+  .newsletter input[type="email"] {
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+  }
+
+  .newsletter button {
+    background-color: #6d9a72;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: Montserrat;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #888;
+    cursor: pointer;
+  }
+
+  .newsletter {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: none;
+    animation: fade-in 0s ease-in-out 1s forwards;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>
