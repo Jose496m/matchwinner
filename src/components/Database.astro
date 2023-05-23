@@ -1,0 +1,13 @@
+---
+const { Pris, Titler, Billeder } = Astro.props;
+---
+
+<div class="grid-container grid_1-1-1-1">
+    <div class="grid-item">
+  <img src={Billeder} alt="Shirts">
+  <h2>{Titler}</h2>
+  <p>{Pris}</p>
+  </div>
+</div>
+
+
