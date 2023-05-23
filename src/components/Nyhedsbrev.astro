@@ -21,6 +21,7 @@
     font-family: Montserrat;
     src: url("/fonts/Montserrat-VariableFont_wght.ttf");
   }
+
   .newsletter-content {
     text-align: center;
   }
@@ -84,6 +85,14 @@
     to {
       opacity: 1;
       transform: translateX(0);
+    }
+  }
+  @media (max-width: 767px) {
+    .newsletter {
+      bottom: 10px;
+      left: 10px;
+      width: 250px;
+      /* Tilpasning af størrelse og placering for mindre skærme */
     }
   }
 </style>
