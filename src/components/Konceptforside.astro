@@ -1,23 +1,3 @@
-<div>
-  <a href="/shop"
-    ><h1>
-      SE ALLE VORES <span class="mystery">MYSTERY</span><span class="box"
-        >BOXES</span
-      > HER
-    </h1></a
-  >
-</div>
-
-<div class="abonnement">
-  <a href="/abonnement">
-    <h2>
-      OPRET ET ABONNEMENT OG <span class="måned"> FÅ ÉN BOX HVER MÅNED</span> TIL
-      KUN 349 DKK
-    </h2></a
-  >
-  <h3>Ingen binding - opsig når som helst</h3>
-</div>
-
 <div class="container">
   <img class="koncept" src="/img/konceptforside.webp" alt="koncept" />
 </div>
@@ -37,9 +17,6 @@
 </div>
 
 <style>
-  body {
-    margin: 0;
-  }
   @font-face {
     font-family: Inter;
     src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
@@ -48,52 +25,10 @@
     font-family: Montserrat;
     src: url("/fonts/Montserrat-VariableFont_wght.ttf");
   }
+
   @media (max-width: 600px) {
-    .mystery {
-      font-weight: 800;
-      color: #6d9a72;
-    }
-    .box {
-      font-weight: 800;
-    }
-    .box {
-      font-weight: bolder;
-    }
-    a {
-      color: black;
-      text-decoration: none;
-    }
-    h1 {
-      text-align: center;
-      font-family: "Inter";
-      font-weight: 350;
-      font-size: 15px;
-    }
-
-    h2 {
-      font-family: Inter;
-      font-weight: 400;
-      text-align: center;
-      font-size: 16px;
-      max-width: 350px;
-      margin: auto;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    h3 {
-      font-family: Montserrat;
-      font-weight: 200;
-      text-align: center;
-      font-size: small;
-      margin-top: -10px;
-    }
-
     .koncept {
       width: 100%;
-    }
-    a {
-      color: black;
-      text-decoration: none;
     }
     p {
       text-align: center;
@@ -105,8 +40,11 @@
       margin-bottom: -20px;
       font-size: 14px;
     }
-    br {
-      margin-bottom: 1.6rem;
+    .tekst {
+      background-color: #e8efe5;
+      margin: -1%;
+      padding: 3%;
+      margin-bottom: 6%;
     }
     .knap {
       display: flex;
@@ -130,67 +68,9 @@
       border-color: #6d9a72;
       color: #6d9a72;
     }
-    .tekst {
-      background-color: #e8efe5;
-      margin: -1%;
-      padding: 3%;
-      margin-bottom: 6%;
-    }
-    .abonnement {
-      padding: 1px;
-      background-color: #87b18b;
-      margin-top: 15%;
-    }
-    .måned {
-      font-weight: 700;
-    }
   }
 
   @media (min-width: 600px) {
-    .mystery {
-      font-weight: 800;
-      color: #6d9a72;
-    }
-    .box {
-      font-weight: 800;
-    }
-    a {
-      color: black;
-      text-decoration: none;
-    }
-    h1 {
-      text-align: center;
-      font-family: "Inter";
-      font-weight: 350;
-    }
-
-    a {
-      color: black;
-      text-decoration: none;
-    }
-    h2 {
-      font-family: "Inter";
-      font-weight: 400;
-      text-align: center;
-      font-size: larger;
-    }
-    .måned {
-      font-weight: 700;
-    }
-    h3 {
-      font-family: Montserrat;
-      font-weight: 200;
-      text-align: center;
-      font-size: large;
-      margin-top: -12px;
-    }
-    .abonnement {
-      padding: 1px;
-      background-color: #87b18b;
-      margin: 22%;
-      margin-top: 5%;
-      margin-bottom: 50px;
-    }
     .koncept {
       width: 100%;
       margin-bottom: -10px;
@@ -210,9 +90,6 @@
 
       padding: 3%;
       margin-bottom: 1%;
-    }
-    br {
-      margin-bottom: 1rem;
     }
     .knap {
       display: flex;
