@@ -1,0 +1,147 @@
+<section class="background">
+  <div>
+    <h2>ABONNEMENT</h2>
+  </div>
+  <div>
+    <h3 class="tekst">
+      Hold spændingen kørende hver måned med nye overraskelser
+    </h3>
+  </div>
+  <div class="grid_2-2">
+    <img class="leg" src="/img/aboleg.webp" alt="billede5" />
+
+    <img class="uni" src="/img/abounik.webp" alt="billeder6" />
+  </div>
+  <div>
+    <a class="knap border" href="/abonnement">LÆS MERE</a>
+  </div>
+</section>
+
+<style>
+  @font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  body {
+    margin: 0;
+  }
+  img {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+  h2 {
+    text-align: center;
+    font-family: Inter;
+    font-size: xx-large;
+    padding-top: 2rem;
+  }
+  h3 {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: lighter;
+  }
+  .background {
+    background-color: #e8efe5;
+    padding-bottom: 1%;
+    margin-bottom: 6rem;
+  }
+  .tekst {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: -50px;
+    font-weight: 300;
+  }
+  .knap {
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    max-width: 100px;
+    color: #000000;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 0%;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .border {
+    border-color: #6d9a72;
+    color: #6d9a72;
+  }
+  .border:hover {
+    background-color: #6d9a72;
+    color: white;
+  }
+
+  .leg {
+    margin-inline-end: 3rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    transition: transform 0.2s;
+  }
+  .uni {
+    margin-inline-start: 3rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    transition: transform 0.2s;
+  }
+  .leg:hover,
+  .uni:hover,
+  .billeder:hover {
+    transform: scale(1.12);
+  }
+
+  @media (max-width: 600px) {
+    .tekst {
+      font-weight: 300;
+      margin-top: -70px;
+      max-width: 300px;
+      text-align: center;
+      margin: auto;
+      padding: 0px;
+    }
+    h2 {
+      font-size: 20px;
+      padding-top: 30px;
+    }
+    .grid_2-2 {
+      text-align: center;
+      gap: 5px;
+      margin: auto;
+    }
+    .grid_2-2 img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .leg {
+      width: 80%;
+      margin-right: 10px;
+    }
+    .uni {
+      width: 80%;
+      margin-left: 10px;
+    }
+    .leg:hover,
+    .uni:hover,
+    .billeder:hover {
+      transform: none;
+    }
+  }
+</style>

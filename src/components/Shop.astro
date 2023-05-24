@@ -1,16 +1,20 @@
 ---
-const { Pris, image, Titler, Beskrivelse } = Astro.props;
+const { Pris, image, Titler } = Astro.props;
 ---
 
-<div class="grid-item">
-  <a href="/leg"
-    ><img class="billeder" src={image} alt="billede1" />
+<div class="grid-container grid_1-1-1-1">
+  <div class="grid-item">
     <h2>{Titler}</h2>
-    <p>{Beskrivelse}</p>
-    <p>{Pris}</p></a
-  >
+    <a href="/"
+      ><img class="billeder" src={image} alt="billede1" />
+
+      <p>{Pris}</p></a
+    >
+  </div>
 </div>
 
+<!-- <a href="/leg"
+      ><img class="billeder" src={image} alt="billede1" /> -->
 <!-- <h1>ALLE PRODUKTER</h1> -->
 <!-- <div class="grid-container grid_1-1-1-1">
   <div class="grid-item">
@@ -31,25 +35,6 @@ const { Pris, image, Titler, Beskrivelse } = Astro.props;
 <section>
   <div>
     <p>VIDEO</p>
-  </div>
-</section>
-
-<section class="background">
-  <div>
-    <h2>ABONNEMENT</h2>
-  </div>
-  <div>
-    <h3 class="tekst">
-      Hold spændingen kørende hver måned med nye overraskelser
-    </h3>
-  </div>
-  <div class="grid_2-2">
-    <img class="leg" src="/img/aboleg.webp" alt="billede5" />
-
-    <img class="uni" src="/img/abounik.webp" alt="billeder6" />
-  </div>
-  <div>
-    <a class="knap border" href="/abonnement">LÆS MERE</a>
   </div>
 </section> -->
 
