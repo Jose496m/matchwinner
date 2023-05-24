@@ -35,7 +35,8 @@ const data = await fetch(
     <Menu />
     <Chat />
     <Shopbillede />
-    <div>
+
+    <div class="grid_1-1-1-1">
       {
         data.map((product) => (
           <Shop
@@ -55,3 +56,13 @@ const data = await fetch(
 </html>
 
 <script src="../scripts/forside.js"></script>
+
+<style>
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    max-width: 1300px;
+    margin-top: 5%;
+  }
+</style>

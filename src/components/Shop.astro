@@ -2,16 +2,17 @@
 const { Pris, image, Titler } = Astro.props;
 ---
 
-<div class="grid-container grid_1-1-1-1">
-  <div class="grid-item">
-    <h2>{Titler}</h2>
-    <a href="/"
-      ><img class="billeder" src={image} alt="billede1" />
-
-      <p>{Pris}</p></a
-    >
+<section>
+  <div class="grid-container">
+    <div>
+      <a href="/"
+        ><img class="billeder" src={image} alt="billede1" />
+        <h2>{Titler}</h2>
+        <p>{Pris}</p></a
+      >
+    </div>
   </div>
-</div>
+</section>
 
 <!-- <a href="/leg"
       ><img class="billeder" src={image} alt="billede1" /> -->
@@ -50,61 +51,22 @@ const { Pris, image, Titler } = Astro.props;
   body {
     margin: 0;
   }
-  .shop {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    margin-top: -60px;
-  }
+
   img {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 90%;
     margin: auto;
     margin-bottom: 10px;
   }
-  .leg {
-    margin-inline-end: 3rem;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
-    transition: transform 0.2s;
-  }
-  .uni {
-    margin-inline-start: 3rem;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
-    transition: transform 0.2s;
-  }
-  .leg:hover,
-  .uni:hover,
-  .billeder:hover {
-    transform: scale(1.12);
-  }
-  h1 {
-    text-align: center;
-    font-family: Inter;
-    margin-top: 2.7rem;
-  }
-  .grid_1-1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 1200px;
-    margin: auto;
-  }
-  .billeder {
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 40px;
-    width: 80%;
-    height: auto;
-  }
+
   p {
     text-align: center;
     font-family: Montserrat;
+    color: #87b18b;
+    margin-top: -15px;
   }
-  span {
-    font-weight: bolder;
-  }
+
   .grid_2-2 {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -113,118 +75,31 @@ const { Pris, image, Titler } = Astro.props;
   h2 {
     text-align: center;
     font-family: Inter;
-    font-size: xx-large;
     padding-top: 2rem;
+    margin-top: -40%;
+    color: white;
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  img:hover {
+    width: 95%;
   }
   h3 {
     text-align: center;
     font-family: Montserrat;
     font-weight: lighter;
   }
-  .background {
-    background-color: #e8efe5;
-    padding-bottom: 1%;
-    margin-bottom: 6rem;
-  }
-  .tekst {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-top: -50px;
-    font-weight: 300;
-  }
-  .knap {
-    display: flex;
-    justify-content: center;
-    font-family: "Open Sans", sans-serif;
-    max-width: 100px;
-    color: #000000;
-    text-decoration: none;
-    margin: auto;
-    margin-top: 0%;
-    margin-bottom: 1rem;
-    border-radius: 2px;
-    border: 2px solid black;
-    background-color: white;
-    color: black;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .border {
-    border-color: #6d9a72;
-    color: #6d9a72;
-  }
-  .border:hover {
-    background-color: #6d9a72;
-    color: white;
-  }
+
   @media (max-width: 600px) {
     .shop {
       margin-top: -45px;
     }
-    h1 {
-      font-size: 20px;
-      margin-top: 20px;
-      margin-bottom: -30px;
-    }
-    .tekst {
-      font-weight: 300;
-      margin-top: -70px;
-      max-width: 300px;
-      text-align: center;
-      margin: auto;
-      padding: 0px;
-    }
+
     h2 {
       font-size: 20px;
       padding-top: 30px;
-    }
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      margin: auto;
-      margin-top: 4rem;
-      width: 95%;
-    }
-
-    .grid-item {
-      text-align: center;
-      margin: -10px;
-    }
-
-    .grid-item img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-    .billeder {
-      margin: auto;
-      margin-bottom: 40px;
-      width: 80%;
-      height: auto;
-    }
-    .grid_2-2 {
-      text-align: center;
-      gap: 5px;
-      margin: auto;
-    }
-    .grid_2-2 img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-
-    .leg {
-      width: 80%;
-      margin-right: 10px;
-    }
-    .uni {
-      width: 80%;
-      margin-left: 10px;
-    }
-    .leg:hover,
-    .uni:hover,
-    .billeder:hover {
-      transform: none;
     }
   }
 </style>
