@@ -1,5 +1,18 @@
-<h1>ALLE PRODUKTER</h1>
-<div class="grid-container grid_1-1-1-1">
+---
+const { Pris, image, Titler, Beskrivelse } = Astro.props;
+---
+
+<div class="grid-item">
+  <a href="/leg"
+    ><img class="billeder" src={image} alt="billede1" />
+    <h2>{Titler}</h2>
+    <p>{Beskrivelse}</p>
+    <p>{Pris}</p></a
+  >
+</div>
+
+<!-- <h1>ALLE PRODUKTER</h1> -->
+<!-- <div class="grid-container grid_1-1-1-1">
   <div class="grid-item">
     <a href="/leg"
       ><img class="billeder" src="/img/legendariske.webp" alt="billede1" /></a
@@ -38,7 +51,7 @@
   <div>
     <a class="knap border" href="/abonnement">LÆS MERE</a>
   </div>
-</section>
+</section> -->
 
 <style>
   @font-face {
