@@ -3,15 +3,23 @@
     <h2>ABONNEMENT</h2>
   </div>
   <div>
-    <h3 class="tekst">
-      Hold spændingen kørende hver måned med nye overraskelser
-    </h3>
+    <h3 class="tekst">Hold spændingen kørende hver måned med nye overraskelser</h3>
   </div>
-  <div class="grid_2-2">
-    <img class="leg" src="/img/aboleg.webp" alt="billede5" />
 
-    <img class="uni" src="/img/abounik.webp" alt="billeder6" />
+  <div class="grid_2-2">
+    <div>
+      <img class="leg" src="/img/aboleg1.webp" alt="billede5" />
+      <h2 class="abbo">1 LEGENDARISK BOX <br /> OM MÅNEDEN</h2>
+      <p class="pris">349 DKK</p>
+    </div>
+
+    <div>
+      <img class="uni" src="/img/abounik1.webp" alt="billeder6" />
+      <h2 class="obba">1 UNIK BOX <br /> OM MÅNEDEN</h2>
+      <p class="sirp">349 DKK</p>
+    </div>
   </div>
+
   <div>
     <a class="knap border" href="/abonnement">LÆS MERE</a>
   </div>
@@ -29,6 +37,36 @@
   body {
     margin: 0;
   }
+  .leg:hover,
+  .uni:hover,
+  .billeder:hover {
+    transform: scale(1.12);
+  }
+  .abbo {
+    color: white;
+    font-size: 140%;
+    margin-top: -35%;
+    margin-left: 33%;
+  }
+  .obba {
+    color: white;
+    font-size: 140%;
+    margin-top: -35%;
+    margin-left: -33%;
+  }
+  .pris {
+    color: #6d9a72;
+    font-family: montserrat;
+    margin-left: 60%;
+    margin-top: -3%;
+  }
+  .sirp {
+    color: #6d9a72;
+    font-family: montserrat;
+    margin-left: 28%;
+    margin-top: -3%;
+  }
+
   img {
     display: flex;
     align-items: center;
@@ -39,6 +77,9 @@
   .grid_2-2 {
     display: grid;
     grid-template-columns: 2fr 2fr;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 50px;
   }
   h2 {
     text-align: center;
@@ -101,11 +142,6 @@
     margin-bottom: 4rem;
     margin-top: 2rem;
     transition: transform 0.2s;
-  }
-  .leg:hover,
-  .uni:hover,
-  .billeder:hover {
-    transform: scale(1.12);
   }
 
   @media (max-width: 600px) {
