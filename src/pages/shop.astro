@@ -5,13 +5,19 @@ import Footer from "../components/Footer.astro";
 import Menu from "../components/Menu.astro";
 import Shop from "../components/Shop.astro";
 import Chat from "../components/Chat.astro";
-import Database from "../components/Database.astro";
+
 import Shopbillede from "../components/Shopbillede.astro";
 
-const data = await fetch("https://lhlqzgpvydlodjfvvbru.supabase.co/rest/v1/Matchwinner", {
-  method: "GET",
-  headers: { apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxobHF6Z3B2eWRsb2RqZnZ2YnJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ0Nzk0MDMsImV4cCI6MjAwMDA1NTQwM30.M5McXqusKfxEHBGbSXw15LL7maXShpRl7-Q-7oMgWeI" },
-}).then((res) => res.json());
+const data = await fetch(
+  "https://lhlqzgpvydlodjfvvbru.supabase.co/rest/v1/Matchwinner",
+  {
+    method: "GET",
+    headers: {
+      apikey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxobHF6Z3B2eWRsb2RqZnZ2YnJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ0Nzk0MDMsImV4cCI6MjAwMDA1NTQwM30.M5McXqusKfxEHBGbSXw15LL7maXShpRl7-Q-7oMgWeI",
+    },
+  }
+).then((res) => res.json());
 ---
 
 <html lang="en">
@@ -28,13 +34,19 @@ const data = await fetch("https://lhlqzgpvydlodjfvvbru.supabase.co/rest/v1/Match
     <Menu />
     <Chat />
     <Shopbillede />
-    <section class="shop">
+    <div>
       {
-        data.map((show) => {
-          return <Database data={show} />;
-        })
+        data.map((product) => (
+          <Shop
+            image={`/img/${product.image}`}
+            Titler={product.Titler}
+            Beskrivelse={product.Beskrivelse}
+            Pris={product.Pris}
+          />
+        ))
       }
-    </section>
+    </div>
+
     <Shop />
     <Footer />
   </body>
