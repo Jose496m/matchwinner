@@ -1,17 +1,12 @@
 ---
-const { Pris, Titler, Billeder } = Astro.props;
+const { data } = Astro.props;
+console.log(data);
 ---
 
 <div class="grid-container grid_1-1-1-1">
   <div class="grid-item">
-<<<<<<< HEAD
-    <img src={Billeder} alt="Shirts" />
-    <h2>{Titler}</h2>
-    <p>{Pris}</p>
-=======
-    <!-- <img src={Billeder} alt="Shirts" /> -->
-    <!-- <h2>{Titler}</h2> -->
-    <!-- <p>{Pris}</p> -->
->>>>>>> e42dca795e7bd4dce8c7c02fb4d58c43318affc2
+    <img src={data.Billeder} alt="Shirts" />
+    <h2>{data.Titler}</h2>
+    <p>{data.Pris}</p>
   </div>
 </div>
