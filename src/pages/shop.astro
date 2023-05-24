@@ -6,6 +6,13 @@ import Menu from "../components/Menu.astro";
 import Shop from "../components/Shop.astro";
 import Chat from "../components/Chat.astro";
 import Database from "../components/Database.astro";
+
+const data = await fetch("https://lhlqzgpvydlodjfvvbru.supabase.co/rest/v1/Matchwinner", {
+  method: "GET",
+  headers: { apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxobHF6Z3B2eWRsb2RqZnZ2YnJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ0Nzk0MDMsImV4cCI6MjAwMDA1NTQwM30.M5McXqusKfxEHBGbSXw15LL7maXShpRl7-Q-7oMgWeI" },
+}).then((res) => res.json());
+
+console.log(data);
 ---
 
 <html lang="en">
@@ -20,13 +27,17 @@ import Database from "../components/Database.astro";
     <Banner />
     <Header />
     <Menu />
-     <Chat />
-   <Database/>
-    <Shop/>
+    <Chat />
+    <section class="shop">
+      {
+        data.map((show) => {
+          return <Database />;
+        })
+      }
+    </section>
+    <Shop />
     <Footer />
   </body>
 </html>
 
-
- <script src="../scripts/forside.js"></script>
-
+<script src="../scripts/forside.js"></script>
