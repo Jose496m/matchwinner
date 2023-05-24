@@ -1,10 +1,7 @@
-<div class="web">
+<div>
   <video controls muted autoplay="autoplay" loop="" src="video/stemningsvideo.mp4" class="video"></video>
 </div>
 
-<div class="mobil">
-  <video muted autoplay="autoplay" loop="" src="video/stemningsvideo.mp4" class="video"></video>
-</div>
 <style>
   @media (min-width: 600px) {
     .video {
@@ -18,9 +15,6 @@
       object-fit: cover;
       z-index: -100;
     }
-    .mobil {
-      display: none;
-    }
   }
   @media (max-width: 600px) {
     .video {
@@ -28,9 +22,6 @@
       height: 100%;
       object-fit: cover;
       margin-top: -45px;
-    }
-    .web {
-      display: none;
     }
   }
 </style>
