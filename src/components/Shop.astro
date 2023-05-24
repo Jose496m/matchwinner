@@ -1,18 +1,14 @@
 ---
-const { Pris, image, Titler } = Astro.props;
+const { slug, Pris, image, Titler } = Astro.props;
 ---
 
-<section>
-  <div class="grid-container">
-    <div>
-      <a href="/"
-        ><img class="billeder" src={image} alt="billede1" />
-        <h2>{Titler}</h2>
-        <p>{Pris}</p></a
-      >
-    </div>
-  </div>
-</section>
+<a href={`beskrivelse/${slug}`}>
+  <article>
+    <img class="billeder" src={image} alt="billede1" />
+    <h2>{Titler}</h2>
+    <p>{Pris}</p>
+  </article>
+</a>
 
 <!-- <a href="/leg"
       ><img class="billeder" src={image} alt="billede1" /> -->
@@ -99,8 +95,27 @@ const { Pris, image, Titler } = Astro.props;
     }
 
     h2 {
-      font-size: 20px;
-      padding-top: 30px;
+      text-align: center;
+      font-family: Inter;
+      padding-top: 2rem;
+      margin-top: -80%;
+      color: blacwhitek;
+      text-decoration: none;
+      font-size: 20%;
+    }
+    img {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+    p {
+      text-align: center;
+      font-family: Montserrat;
+      color: #87b18b;
+      margin-top: -5px;
+      font-size: 15%;
     }
   }
 </style>
