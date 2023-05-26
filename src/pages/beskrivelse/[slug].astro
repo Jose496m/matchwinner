@@ -1,4 +1,12 @@
 ---
+import Banner from "../../components/Banner.astro";
+import Chat from "../../components/Chat.astro";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+import Menu from "../../components/Menu.astro";
+import Produkt from "../../components/Produkt.astro";
+import Shopbillede from "../../components/Shopbillede.astro";
+
 export async function getStaticPaths() {
   const data = await fetch(
     "https://lhlqzgpvydlodjfvvbru.supabase.co/rest/v1/Matchwinner",
@@ -10,11 +18,49 @@ export async function getStaticPaths() {
       },
     }
   ).then((response) => response.json());
-  return data.map((post) => {
+
+  return data.map((beskrivelse) => {
     return {
-      params: { slug: post.slug },
-      props: { post },
+      params: { slug: beskrivelse.slug },
+      props: { data: beskrivelse },
     };
   });
 }
+
+const { data } = Astro.props;
+console.log(data);
 ---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+
+  <body>
+    <Banner />
+    <Header />
+    <Menu />
+    <Chat />
+    <section class="beskrivelse">
+      <div>
+        {
+          (
+            <Produkt
+              Titler={data.Titler}
+              image={`/img/${data.image}`}
+              Titler={data.Titler}
+              Beskrivelse={data.Beskrivelse}
+              Pris={data.Pris}
+              slug={data.slug}
+            />
+          )
+        }
+      </div>
+    </section>
+    <Footer />
+  </body>
+</html>

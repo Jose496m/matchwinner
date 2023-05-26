@@ -5,7 +5,6 @@ import Footer from "../components/Footer.astro";
 import Menu from "../components/Menu.astro";
 import Shop from "../components/Shop.astro";
 import Chat from "../components/Chat.astro";
-
 import Shopbillede from "../components/Shopbillede.astro";
 import Abonnementshop from "../components/Abonnementshop.astro";
 
@@ -19,6 +18,8 @@ const data = await fetch(
     },
   }
 ).then((res) => res.json());
+
+console.log(data);
 ---
 
 <html lang="en">
@@ -35,21 +36,22 @@ const data = await fetch(
     <Menu />
     <Chat />
     <Shopbillede />
+    <section class="beskrivelse">
+      <div class="grid_1-1-1-1">
+        {
+          data.map((product) => (
+            <Shop
+              image={`/img/${product.image}`}
+              Titler={product.Titler}
+              Beskrivelse={product.Beskrivelse}
+              Pris={product.Pris}
+              slug={product.slug}
+            />
+          ))
+        }
+      </div>
+    </section>
 
-    <div class="grid_1-1-1-1">
-      {
-        data.map((product) => (
-          <Shop
-            image={`/img/${product.image}`}
-            Titler={product.Titler}
-            Beskrivelse={product.Beskrivelse}
-            Pris={product.Pris}
-          />
-        ))
-      }
-    </div>
-
-    <Shop />
     <Abonnementshop />
     <Footer />
   </body>
