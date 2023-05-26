@@ -3,11 +3,37 @@
 </div>
 <p class="USP">Oplev spændingen på og af banen.</p>
 
-<div class="tekst">
-  <p>
-    Matchwinner er et helt nyt koncept i Danmark.<br /> Hos Matchwinner sælger vi mystery boxes med helt nye og 100% originale fodboldtrøjer, som har en minimum vejledende pris på 600 kr. Du har derfor muligheden for at udvide din fodboldtrøje samling med forskellige spændende trøjer fra hele verden! <br /> Vi går meget op i, at vores kunder er tilfredse. Derfor tilbyder vi, at du kan vælge 1 hold, som du absolut IKKE vil modtage i din Mysterybox. Skulle du være så uheldig alligevel at modtage en trøje fra et hold, som du ikke ønsker, så frygt ej. Du kan altid inden for 14 dage returnere dine varer til Matchwinner, så længe trøjen stadig er med tags!
-  </p>
-  <a class="knap border" href="/about">LÆS MERE</a>
+<div class="tekst grid_1-1">
+  <div class="tekst1">
+    <h1>Matchwinner er et helt nyt koncept i Danmark.</h1>
+    <p class="tekst3">
+      Hos Matchwinner er vi stolte af at præsentere vores fantastiske sortiment
+      af mystery boxes, der indeholder helt nye og 100% originale fodboldtrøjer.
+      Vores trøjer har en minimum vejledende pris på 600 kr., hvilket betyder,
+      at du får muligheden for at tilføje en bred vifte af spændende
+      fodboldtrøjer til din samling fra forskellige hold rundt omkring i verden!
+      Vi stræber altid efter at sikre vores kunders fulde tilfredshed. Derfor
+      har vi en unik fordel for dig: Du kan vælge et enkelt hold, som du absolut
+      ikke ønsker at modtage i din Mysterybox. Vi forstår, at nogle hold måske
+      ikke er dine favoritter, og vi vil gerne give dig kontrol over indholdet i
+      din mystery box.
+    </p>
+  </div>
+  <div>
+    <p class="tekst2">
+      Skulle uheldet alligevel være ude, og du modtager en trøje fra det valgte
+      hold, behøver du ikke bekymre dig. Du kan nemlig inden for 14 dage
+      returnere dine varer til Matchwinner, så længe trøjen stadig er forsynet
+      med tagsene. Vi ønsker at skabe den bedst mulige oplevelse for vores
+      kunder, og det inkluderer at give dig valgmuligheder og sikkerhed ved dit
+      køb. Vores passion for fodbold og kvaliteten af vores mystery boxes er
+      vores kerneværdier, og vi er glade for at kunne dele denne spændende
+      oplevelse med dig. Udforsk vores udvalg af mystery boxes, og lad os hjælpe
+      dig med at udvide din fodboldtrøjesamling på en overraskende og fornøjelig
+      måde!
+    </p>
+    <a class="knap border" href="/about">LÆS MERE</a>
+  </div>
 </div>
 
 <style>
@@ -78,6 +104,17 @@
   }
 
   @media (min-width: 600px) {
+    h1 {
+      font-family: Inter;
+      font-size: 23px;
+      margin-left: 139px;
+    }
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: auto;
+      background-color: #e8efe5;
+    }
     .koncept {
       width: 100%;
       margin-bottom: -50px;
@@ -97,11 +134,11 @@
     }
     p {
       font-family: "Monsserrat";
-      text-align: center;
+
       margin: auto;
       margin-top: 1%;
       line-height: 32px;
-      max-width: 750px;
+      max-width: 600px;
       font-family: Montserrat;
       margin-bottom: -10px;
     }
@@ -113,14 +150,13 @@
     }
     .knap {
       display: flex;
-      justify-content: center;
       font-family: "Open Sans", sans-serif;
       max-width: 100px;
       color: #000000;
       text-decoration: none;
       margin: auto;
       margin-top: 60px;
-      margin-bottom: 0rem;
+      margin-bottom: 5%;
       border-radius: 2px;
       border: 2px solid black;
       background-color: white;
@@ -128,6 +164,7 @@
       padding: 14px 28px;
       font-size: 16px;
       cursor: pointer;
+      margin-left: 33%;
     }
     .border {
       border-color: #6d9a72;
@@ -136,6 +173,15 @@
     .border:hover {
       background-color: #6d9a72;
       color: white;
+    }
+    .tekst2 {
+      margin-top: 10%;
+      margin-left: 35px;
+    }
+
+    .tekst3 {
+      margin-top: 5%;
+      margin-right: 35px;
     }
   }
 </style>
