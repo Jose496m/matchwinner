@@ -5,6 +5,7 @@ import Footer from "../../components/Footer.astro";
 import Header from "../../components/Header.astro";
 import Menu from "../../components/Menu.astro";
 import Produkt from "../../components/Produkt.astro";
+import Produktinfo from "../../components/Produktinfo.astro";
 import Shopbillede from "../../components/Shopbillede.astro";
 
 export async function getStaticPaths() {
@@ -61,6 +62,7 @@ console.log(data);
         }
       </div>
     </section>
+    <Produktinfo />
     <Footer />
   </body>
 </html>
