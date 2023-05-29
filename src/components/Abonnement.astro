@@ -2,15 +2,38 @@
 <div class="green">
   <h1 class="bpa">BOX PÅ ABONNEMENT</h1>
   <h2>"Den mest spændende måde, at udvide din fodboldtrøje samling på"</h2>
-  <p>
-    Abonner i dag for at kickstarte din fodboldtrøje samling! Spar penge og tid. 
-    Hvis du vælger at oprette et abonnement på mysteryboxes, får du hver måned, eller
-    hver 14. dag tilsendt én mysterybox fra samme trøjeudvalg som florerer i vores
-    almindelige singleboxes. Abonnementet er IKKE bindende, og så fremt du ønsker
-    at opsige dit abonnement, skriver du bare til os i chatten eller via ''kontakt
-    os'' formularen. Din opsigelse er gældende fra det tidspunkt vi modtager din
-    besked.
-  </p>
+  <div class="tekst grid_2-2">
+    <div class="tekst1">
+      <p class="tekst3">
+        Kickstart din fodboldtrøjesamling i dag. Abonner i dag og spar penge og
+        tid. Med vores mysterybox-abonnement får du regelmæssigt tilsendt en
+        mysterybox med autentiske fodboldtrøjer fra vores omfattende udvalg. Du
+        kan vælge at modtage en box enten hver måned eller hver 14. dag.
+        Abonnementet er ikke bindende, og du kan nemt opsige det ved at kontakte
+        os. Vælg fra vores store trøjeudvalg. Vores mysteryboxes indeholder helt
+        nye og 100% originale fodboldtrøjer, der har en minimumsvejledende pris
+        på 600 kr. Du vil blive overrasket med spændende trøjer fra forskellige
+        hold rundt omkring i verden. Vi sikrer, at du udvider din samling med
+        autentiske trøjer fra ikoniske klubber og landshold.
+      </p>
+    </div>
+    <div>
+      <p class="tekst2">
+        Tilfredshedsgaranti og fleksibilitet. Din tilfredshed er vigtig for os.
+        Hvis du modtager en trøje fra et hold, du ikke ønsker, kan du altid
+        returnere den inden for 14 dage, så længe tagsene stadig er på. Vi
+        ønsker at sikre, at du er tilfreds med dit køb. Derudover er vores
+        abonnement ikke bindende, og du kan nemt opsige det ved at kontakte os
+        via chatten eller vores "kontakt os"-formular. Oplev bekvemmeligheden
+        ved vores abonnement. Vores abonnementstjeneste tilbyder en problemfri
+        oplevelse. Du behøver ikke bekymre dig om gentagne ordrer eller at finde
+        nye trøjer til din samling. Vi tager os af det hele for dig og sørger
+        for regelmæssige leverancer af autentiske trøjer. Abonner i dag og nyd
+        spændingen ved at modtage mysteryboxes fyldt med autentiske
+        fodboldtrøjer.
+      </p>
+    </div>
+  </div>
 </div>
 <h2 class="bestsellers">BESTSELLERS</h2>
 <section class="grid_1-1">
@@ -23,6 +46,29 @@
 <style>
   body {
     margin: 0;
+  }
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    background-color: #e8efe5;
+    margin-top: -3%;
+  }
+
+  .tekst {
+    background-color: #e8efe5;
+
+    padding: 3%;
+    margin-bottom: 1%;
+  }
+  .tekst2 {
+    margin-top: 5%;
+    margin-left: 35px;
+  }
+
+  .tekst3 {
+    margin-top: 5%;
+    margin-right: 35px;
   }
   .abonnement {
     width: 100%;
@@ -53,20 +99,21 @@
     font-family: Montserrat;
     font-weight: 470;
   }
-    .bestsellers {
+  .bestsellers {
     margin-top: 60px;
     font-size: xx-large;
     margin-bottom: -20px;
     font-weight: 700;
   }
   p {
+    font-family: "Monsserrat";
+
     margin: auto;
-    max-width: 750px;
-    text-align: center;
-    font-size: medium;
+    margin-top: 1%;
     line-height: 32px;
-    margin-bottom: 30px;
+    max-width: 600px;
     font-family: Montserrat;
+    margin-bottom: -10px;
   }
   br {
     margin-bottom: 1rem;
@@ -101,13 +148,29 @@
     transform: scale(1.12);
   }
   @media (max-width: 600px) {
+    p {
+      text-align: center;
+      margin: auto;
+      margin-top: 1%;
+      line-height: 24px;
+      max-width: 320px;
+      font-family: Montserrat;
+      margin-bottom: -20px;
+      font-size: 14px;
+    }
+    .tekst {
+      background-color: #e8efe5;
+      margin: -1%;
+      padding: 3%;
+      margin-bottom: 6%;
+    }
     .abonnement {
       margin-top: -45px;
-    } 
-     h1{
+    }
+    h1 {
       font-size: larger;
     }
-    h2{
+    h2 {
       font-size: small;
       max-width: 400px;
       margin: auto;
@@ -115,30 +178,33 @@
       margin-bottom: 25px;
       max-width: 380px;
     }
-     p {
+    p {
       margin: auto;
       max-width: 350px;
       text-align: center;
       margin-bottom: 20px;
       font-size: small;
       line-height: 25px;
-       font-size: 14px;
-       margin-top: 10px;
+      font-size: 14px;
+      margin-top: 10px;
     }
-    .bestsellers{
+    .bestsellers {
       font-size: 20px;
       margin-top: 20px;
       margin-bottom: -10px;
     }
-    .grid_1-1{
-        max-width: 350px;
-        margin: auto;
-        margin-top: 3rem;
+    .grid_1-1 {
+      max-width: 350px;
+      margin: auto;
+      margin-top: 3rem;
     }
-    .leg{width: 80%;
-    margin-right: 10px;}
-    .uni{width: 80%;
-    margin-left: 10px;}
+    .leg {
+      width: 80%;
+      margin-right: 10px;
+    }
+    .uni {
+      width: 80%;
+      margin-left: 10px;
+    }
   }
-
 </style>
