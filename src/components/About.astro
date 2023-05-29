@@ -19,19 +19,36 @@
       </p>
     </div>
 
-    <div>
-      <p class="tekst2">
-        Skulle uheldet alligevel være ude, og du modtager en trøje fra det
-        valgte hold, behøver du ikke bekymre dig. Du kan nemlig inden for 14
-        dage returnere dine varer til Matchwinner, så længe trøjen stadig er
-        forsynet med tagsene. Vi ønsker at skabe den bedst mulige oplevelse for
-        vores kunder, og det inkluderer at give dig valgmuligheder og sikkerhed
-        ved dit køb. Vores passion for fodbold og kvaliteten af vores mystery
-        boxes er vores kerneværdier, og vi er glade for at kunne dele denne
-        spændende oplevelse med dig. Udforsk vores udvalg af mystery boxes, og
-        lad os hjælpe dig med at udvide din fodboldtrøjesamling på en
-        overraskende og fornøjelig måde!
-      </p>
+    <button class="knap border" id="show-more-button">Vis mere</button>
+
+    <div id="overlay"></div>
+
+    <div id="popup-window">
+      <div id="content-box">
+        <p class="tekst2">
+          Matchwinner er et helt nyt koncept i Danmark. Hos Matchwinner er vi
+          stolte af at præsentere vores fantastiske sortiment af mystery boxes,
+          der indeholder helt nye og 100% originale fodboldtrøjer. Vores trøjer
+          har en minimum vejledende pris på 600 kr., hvilket betyder, at du får
+          muligheden for at tilføje en bred vifte af spændende fodboldtrøjer til
+          din samling fra forskellige hold rundt omkring i verden! Vi stræber
+          altid efter at sikre vores kunders fulde tilfredshed. Derfor har vi en
+          unik fordel for dig: Du kan vælge et enkelt hold, som du absolut ikke
+          ønsker at modtage i din Mysterybox. Vi forstår, at nogle hold måske
+          ikke er dine favoritter, og vi vil gerne give dig kontrol over
+          indholdet i din mystery box. Skulle uheldet alligevel være ude, og du
+          modtager en trøje fra det valgte hold, behøver du ikke bekymre dig. Du
+          kan nemlig inden for 14 dage returnere dine varer til Matchwinner, så
+          længe trøjen stadig er forsynet med tagsene. Vi ønsker at skabe den
+          bedst mulige oplevelse for vores kunder, og det inkluderer at give dig
+          valgmuligheder og sikkerhed ved dit køb. Vores passion for fodbold og
+          kvaliteten af vores mystery boxes er vores kerneværdier, og vi er
+          glade for at kunne dele denne spændende oplevelse med dig. Udforsk
+          vores udvalg af mystery boxes, og lad os hjælpe dig med at udvide din
+          fodboldtrøjesamling på en overraskende og fornøjelig måde!
+        </p>
+      </div>
+      <span id="close-button">&times;</span>
     </div>
   </div>
 </div>
@@ -71,6 +88,7 @@
   </div>
   <a class="knap border" href="/shop">SHOP HER</a>
 </div>
+<script src="../scripts/popup.js"></script>
 
 <style>
   body {
@@ -92,6 +110,66 @@
       align-items: center;
       margin-top: 4rem;
     }
+    .knap {
+      display: flex;
+      justify-content: center;
+      font-family: "Open Sans", sans-serif;
+      max-width: 100px;
+      color: #000000;
+      text-decoration: none;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 1rem;
+      border-radius: 2px;
+      border: 2px solid black;
+      background-color: white;
+      color: black;
+      padding: 10px 18px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .border {
+      border-color: #6d9a72;
+      color: #6d9a72;
+    }
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    #popup-window {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      color: #000;
+      padding: 20px;
+      z-index: 2;
+    }
+
+    #content-box {
+      /* Tilpas yderligere styling efter behov */
+    }
+
+    #close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    #show-more-button {
+      /* Tilpas yderligere styling efter behov */
+    }
 
     .tekst2 {
       font-family: "Monsserrat";
@@ -99,7 +177,7 @@
       margin: auto;
       margin-top: 1%;
       line-height: 32px;
-      max-width: 600px;
+      max-width: 750px;
       font-family: Montserrat;
       margin-bottom: -10px;
       margin-left: 5%;
@@ -191,13 +269,6 @@
     .border:hover {
       background-color: #6d9a72;
       color: white;
-    }
-    .grid_2-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: auto;
-      margin-top: 4rem;
-      margin-bottom: 50px;
     }
   }
 
