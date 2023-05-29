@@ -11,6 +11,20 @@ import Konceptforside from "../components/Konceptforside.astro";
 import Semysteryforside from "../components/Semysteryforside.astro";
 import Nyhedsbrev from "../components/Nyhedsbrev.astro";
 import Videoforside from "../components/Videoforside.astro";
+import Karussel from "../components/Karussel.astro";
+
+const data = await fetch(
+  "https://lhlqzgpvydlodjfvvbru.supabase.co/rest/v1/Matchwinner",
+  {
+    method: "GET",
+    headers: {
+      apikey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxobHF6Z3B2eWRsb2RqZnZ2YnJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ0Nzk0MDMsImV4cCI6MjAwMDA1NTQwM30.M5McXqusKfxEHBGbSXw15LL7maXShpRl7-Q-7oMgWeI",
+    },
+  }
+).then((res) => res.json());
+
+console.log(data);
 ---
 
 <html lang="en">
@@ -29,6 +43,7 @@ import Videoforside from "../components/Videoforside.astro";
     <Videoforside />
 
     <Semysteryforside />
+    <Karussel />
     <Opsigelsebox />
 
     <Konceptforside />
@@ -38,3 +53,49 @@ import Videoforside from "../components/Videoforside.astro";
   </body>
 </html>
 <script src="../scripts/forside.js"></script>
+<script src="../scripts/karussel.js"></script>
+
+<style>
+  .carousel {
+    position: relative;
+    width: 100%;
+  }
+
+  .slide-container {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .slide {
+    flex: 0 0 33.33%;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+
+  .slide.active {
+    flex: 0 0 40%;
+    opacity: 1;
+  }
+
+  .slide img {
+    width: 100%;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .arrow-left {
+    left: 10px;
+  }
+
+  .arrow-right {
+    right: 10px;
+  }
+</style>
