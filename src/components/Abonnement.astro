@@ -35,6 +35,7 @@
     </div>
   </div>
 </div>
+
 <h2 class="bestsellers">BESTSELLERS</h2>
 <section class="grid_1-1">
   <div>
@@ -44,31 +45,16 @@
 </section>
 
 <style>
+  @font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
   body {
     margin: 0;
-  }
-  .grid_2-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    background-color: #e8efe5;
-    margin-top: -3%;
-  }
-
-  .tekst {
-    background-color: #e8efe5;
-
-    padding: 3%;
-    margin-bottom: 1%;
-  }
-  .tekst2 {
-    margin-top: 5%;
-    margin-left: 35px;
-  }
-
-  .tekst3 {
-    margin-top: 5%;
-    margin-right: 35px;
   }
   .abonnement {
     width: 100%;
@@ -76,135 +62,170 @@
     margin: auto;
     margin-top: -60px;
   }
-  .green {
-    background-color: #e8efe5;
-    padding-bottom: 10px;
-    margin-top: -20px;
-  }
-  .bpa {
-    padding-top: 30px;
-    margin-bottom: 1rem;
-  }
-  h1 {
-    text-align: center;
-    margin-top: 1rem;
-    font-family: Inter;
-    font-size: xx-large;
-  }
-  h2 {
-    text-align: center;
-    margin-top: -8px;
-    margin-bottom: 1.5rem;
-    font-size: large;
-    font-family: Montserrat;
-    font-weight: 470;
-  }
-  .bestsellers {
-    margin-top: 60px;
-    font-size: xx-large;
-    margin-bottom: -20px;
-    font-weight: 700;
-  }
-  p {
-    font-family: "Monsserrat";
-
-    margin: auto;
-    margin-top: 1%;
-    line-height: 32px;
-    max-width: 600px;
-    font-family: Montserrat;
-    margin-bottom: -10px;
-  }
-  br {
-    margin-bottom: 1rem;
-  }
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    margin-top: 4rem;
-    margin-bottom: 50px;
-  }
-  img {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    height: auto;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-  .leg {
-    margin-inline-end: 3rem;
-    margin-bottom: 4rem;
-    transition: transform 0.2s;
-  }
-  .uni {
-    margin-inline-start: 3rem;
-    margin-bottom: 4rem;
-    transition: transform 0.2s;
-  }
-  .leg:hover,
-  .uni:hover {
-    transform: scale(1.12);
-  }
-  @media (max-width: 600px) {
-    p {
-      text-align: center;
+  @media (min-width: 600px) {
+    .grid_2-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       margin: auto;
-      margin-top: 1%;
-      line-height: 24px;
-      max-width: 320px;
-      font-family: Montserrat;
-      margin-bottom: -20px;
-      font-size: 14px;
+      background-color: #e8efe5;
+      margin-top: -3%;
     }
+
     .tekst {
       background-color: #e8efe5;
-      margin: -1%;
+
       padding: 3%;
-      margin-bottom: 6%;
+      margin-bottom: 1%;
+    }
+    .tekst2 {
+      margin-top: 5%;
+      margin-left: 35px;
+    }
+
+    .tekst3 {
+      margin-top: 5%;
+      margin-right: 35px;
+    }
+
+    .green {
+      background-color: #e8efe5;
+      padding-bottom: 10px;
+      margin-top: -20px;
+    }
+    .bpa {
+      padding-top: 30px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 1rem;
+      font-family: Inter;
+      font-size: xx-large;
+    }
+    h2 {
+      text-align: center;
+      margin-top: -8px;
+      margin-bottom: 1.5rem;
+      font-size: large;
+      font-family: Montserrat;
+      font-weight: 470;
+    }
+    .bestsellers {
+      margin-top: 60px;
+      font-size: xx-large;
+      margin-bottom: -20px;
+      font-weight: 700;
+    }
+    p {
+      font-family: "Monsserrat";
+
+      margin: auto;
+      margin-top: 1%;
+      line-height: 32px;
+      max-width: 600px;
+      font-family: Montserrat;
+      margin-bottom: -10px;
+    }
+    br {
+      margin-bottom: 1rem;
+    }
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: auto;
+      margin-top: 4rem;
+      margin-bottom: 50px;
+    }
+    img {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      height: auto;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    .leg {
+      margin-inline-end: 3rem;
+      margin-bottom: 4rem;
+      transition: transform 0.2s;
+    }
+    .uni {
+      margin-inline-start: 3rem;
+      margin-bottom: 4rem;
+      transition: transform 0.2s;
+    }
+    .leg:hover,
+    .uni:hover {
+      transform: scale(1.12);
+    }
+  }
+  @media (max-width: 600px) {
+    .green {
+      background-color: #e8efe5;
+      padding-bottom: 10px;
+      margin-top: -20px;
+    }
+    .bpa {
+      padding-top: 30px;
+      margin-bottom: 1rem;
+    }
+    p {
+      text-align: left;
+      margin: auto;
+      margin-top: 1%;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: medium;
+      font-family: Inter;
+    }
+    .tekst2 {
+      font-family: Montserrat;
+      max-width: 75%;
+      text-align: left;
+      font-size: 90%;
+      line-height: 150%;
+    }
+    .tekst3 {
+      font-family: Montserrat;
+      max-width: 75%;
+      text-align: left;
+      font-size: 90%;
+      line-height: 150%;
     }
     .abonnement {
       margin-top: -45px;
     }
     h1 {
       font-size: larger;
+      text-align: center;
+      margin-top: 4%;
     }
     h2 {
-      font-size: small;
+      font-size: 70%;
       max-width: 400px;
       margin: auto;
-      margin-top: -10px;
+      margin-top: -3px;
       margin-bottom: 25px;
       max-width: 380px;
     }
-    p {
-      margin: auto;
-      max-width: 350px;
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: small;
-      line-height: 25px;
-      font-size: 14px;
-      margin-top: 10px;
-    }
+
     .bestsellers {
       font-size: 20px;
       margin-top: 20px;
       margin-bottom: -10px;
+      text-align: center;
     }
-    .grid_1-1 {
-      max-width: 350px;
-      margin: auto;
-      margin-top: 3rem;
-    }
+
     .leg {
       width: 80%;
-      margin-right: 10px;
+      margin: 10%;
     }
     .uni {
       width: 80%;
-      margin-left: 10px;
+      margin: 10%;
     }
   }
 </style>
