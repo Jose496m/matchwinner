@@ -3,17 +3,17 @@
   <div class="slide-container">
     <div class="slide active">
       <a href="/shop">
-        <img class="bil1 bil4 bil5" src="/img/scarf1.webp" alt="Billede 1" />
+        <img class="bil1 bil4 bil5" src="/img/scarf.webp" alt="Billede 1" />
       </a>
     </div>
     <div class="slide">
       <a href="/shop">
-        <img class="bil2" src="/img/unikke1.webp" alt="Billede 2" />
+        <img class="bil2" src="/img/unikke.webp" alt="Billede 2" />
       </a>
     </div>
     <div class="slide">
       <a href="/shop">
-        <img class="bil1 bil4 bil6" src="/img/jun1.webp" alt="Billede 3" />
+        <img class="bil1 bil4 bil6" src="/img/junior.webp" alt="Billede 3" />
       </a>
     </div>
   </div>
@@ -28,6 +28,7 @@
     width: 80%;
     margin: auto;
     margin-top: 40px;
+    margin-bottom: 30px;
   }
 
   .slide-container {
@@ -49,7 +50,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 5rem;
-    color: #3c3c3c;
+    color: #000000;
     cursor: pointer;
     z-index: 2;
   }
@@ -86,5 +87,23 @@
   .bil6 {
     margin-right: 60%;
     display: inline-block;
+  }
+
+  @media (max-width: 600px) {
+    .arrow-left {
+      left: -25px;
+    }
+
+    .arrow-right {
+      right: -25px;
+    }
+
+    .arrow {
+      font-size: 3rem;
+    }
+    .carousel {
+      margin-top: 15px;
+      margin-bottom: 0px;
+    }
   }
 </style>
