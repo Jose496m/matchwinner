@@ -1,42 +1,113 @@
-<section class="dropdown grid_1-1-1">
-  <nav>
-    <ul class="menu">
-      <li class="parent">
-        <div class="grid-item">PRODUKTINFO</div>
-        <ul class="submenu">
-          <li>
-            Hos Matchwinner vil vi sikre os, at vores kunder altid er tilfredse.
-            Derfor kan du tilføje en note til denne ordre hvor du kan fortælle
-            os ét hold som din trøje absolut IKKE må være fra. Hvis du modtager
-            pakken og alligevel ikke er tilfreds har vi altid 14 dages retur på
-            ubrugte trøjer!
-          </li>
-        </ul>
-      </li>
-      <div class="line"></div>
-      <li class="parent">
-        <div class="grid-item">RETUR / REFUNDERING</div>
-        <ul class="submenu">
-          <li>
-            Hos Matchwinner har du altid 14 dages fortrydelsesret. Du skriver
-            bare en besked til os på instagram eller her på siden. Så guider vi
-            dig så du super hurtigt og nemt kan returnere din vare. Da vi hos
-            Matchwinner forsøger at have de bedste priser er du selv ansvarlig
-            for eventuelle omkostninger ved returnering/ombytning.
-          </li>
-        </ul>
-      </li>
-      <div class="line"></div>
-      <li class="parent">
-        <div class="grid-item">FRAGT INFO</div>
-        <ul class="submenu">
-          <li>
-            Vi bestræber os på at sende alle ordre samme dag. Du vil derfor
-            modtage din pakke inden for 2-4 hverdage! Vi sender alle vores
-            pakker med DAO365
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</section>
+<div class="container">
+  <section class="dropdown">
+    <div class="column">
+      <h2 class="dropdown-header">PRODUKTINFO</h2>
+      <div class="dropdown-content">
+        <p>
+          Hos Matchwinner vil vi sikre os, at vores kunder altid er tilfredse.
+          Derfor kan du tilføje en note til denne ordre hvor du kan fortælle os
+          ét hold som din trøje absolut IKKE må være fra. Hvis du modtager
+          pakken og alligevel ikke er tilfreds har vi altid 14 dages retur på
+          ubrugte trøjer!
+        </p>
+      </div>
+    </div>
+    <div class="column">
+      <h2 class="dropdown-header">RETUR / REFUNDERING</h2>
+      <div class="dropdown-content">
+        <p>
+          Hos Matchwinner har du altid 14 dages fortrydelsesret. Du skriver bare
+          en besked til os på instagram eller her på siden. Så guider vi dig så
+          du super hurtigt og nemt kan returnere din vare. Da vi hos Matchwinner
+          forsøger at have de bedste priser er du selv ansvarlig for eventuelle
+          omkostninger ved returnering/ombytning.
+        </p>
+      </div>
+    </div>
+    <div class="column">
+      <h2 class="dropdown-header">FRAGT INFO</h2>
+      <div class="dropdown-content">
+        <p>
+          Vi bestræber os på at sende alle ordre samme dag. Du vil derfor
+          modtage din pakke inden for 2-4 hverdage! Vi sender alle vores pakker
+          med DAO365
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+  @font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  @media (min-width: 600px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 10%;
+    }
+    .dropdown {
+      display: flex;
+    }
+    .column {
+      flex: 1;
+      margin: 0 10px;
+      background-color: #e8efe5;
+    }
+    .dropdown-header {
+      font-family: Inter;
+      text-align: center;
+      cursor: pointer;
+    }
+    p {
+      font-family: Montserrat;
+      line-height: 200%;
+      width: 75%;
+      text-align: left;
+      margin: 17%;
+      margin-top: 2%;
+    }
+    h2 {
+      font-family: Inter;
+    }
+  }
+  /* Mobile version */
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: stretch;
+      background-color: #e8efe5;
+    }
+    .column {
+      margin: 10px 0;
+      background-color: #e8efe5;
+    }
+    .dropdown-header:hover {
+      background-color: #d5e6d6;
+    }
+    .dropdown-header.active {
+      background-color: #d5e6d6;
+    }
+    .dropdown-header.active + .dropdown-content {
+      display: block;
+    }
+
+    p {
+      font-family: Montserrat;
+      line-height: 200%;
+      width: 90%;
+      margin: 5%;
+    }
+    .dropdown-content {
+      display: none;
+      padding: 10px;
+    }
+  }
+</style>
