@@ -3,7 +3,7 @@
   <div class="slide-container">
     <div class="slide active">
       <a href="/shop">
-        <img class="bil1 bil4" src="/img/scarf1.webp" alt="Billede 1" />
+        <img class="bil1 bil4 bil5" src="/img/scarf1.webp" alt="Billede 1" />
       </a>
     </div>
     <div class="slide">
@@ -13,7 +13,7 @@
     </div>
     <div class="slide">
       <a href="/shop">
-        <img class="bil1 bil4" src="/img/jun1.webp" alt="Billede 3" />
+        <img class="bil1 bil4 bil6" src="/img/jun1.webp" alt="Billede 3" />
       </a>
     </div>
   </div>
@@ -25,7 +25,9 @@
 <style>
   .carousel {
     position: relative;
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
   }
 
   .slide-container {
@@ -34,14 +36,11 @@
   }
 
   .slide {
-    flex: 0 30% 0; /* Justér denne værdi efter dine præferencer */
-    opacity: 0.6;
-    transition: opacity 0.3s;
-    margin: 0 10px; /* Justér denne værdi efter dine præferencer */
+    margin: 0 -65px; /* Justér denne værdi efter dine præferencer */
   }
 
   .slide.active {
-    flex: 0 40% 0;
+    flex: 0 100% 0;
     opacity: 1;
   }
 
@@ -49,33 +48,43 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem;
-    color: #000;
+    font-size: 5rem;
+    color: #3c3c3c;
     cursor: pointer;
     z-index: 2;
   }
 
   .arrow-left {
-    left: 10px;
+    left: 25px;
   }
 
   .arrow-right {
-    right: 10px;
+    right: 25px;
   }
 
-  .bil1 {
-    width: 70%;
-  }
   .bil2 {
     width: 80%;
     margin-left: 10%;
-    margin-right: auto;
+    margin-right: 10%;
+    position: relative;
+    display: inline-block;
   }
 
-  .bil3 {
-    margin-left: 20%;
-  }
   .bil4 {
-    margin-left: 15%;
+    margin-top: 5%;
+  }
+  .bil1 {
+    width: 70%;
+  }
+  .bil3 {
+    margin-right: 60%;
+    width: 70%;
+  }
+  .bil5 {
+    margin-left: 30%;
+  }
+  .bil6 {
+    margin-right: 60%;
+    display: inline-block;
   }
 </style>
