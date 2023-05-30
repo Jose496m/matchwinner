@@ -3,38 +3,54 @@
 </div>
 <p class="USP">Oplev spændingen på og af banen.</p>
 
-<div class="tekst grid_1-1">
+<div class="tekst grid_2-2">
   <div class="tekst1">
-    <h1>Matchwinner er et helt nyt koncept i Danmark.</h1>
+    <h2>Matchwinner er et helt nyt koncept i Danmark.</h2>
     <p class="tekst3">
       Hos Matchwinner er vi stolte af at præsentere vores fantastiske sortiment
       af mystery boxes, der indeholder helt nye og 100% originale fodboldtrøjer.
-      Vores trøjer har en minimum vejledende pris på 600 kr., hvilket betyder,
-      at du får muligheden for at tilføje en bred vifte af spændende
-      fodboldtrøjer til din samling fra forskellige hold rundt omkring i verden!
-      Vi stræber altid efter at sikre vores kunders fulde tilfredshed. Derfor
-      har vi en unik fordel for dig: Du kan vælge et enkelt hold, som du absolut
-      ikke ønsker at modtage i din Mysterybox. Vi forstår, at nogle hold måske
-      ikke er dine favoritter, og vi vil gerne give dig kontrol over indholdet i
-      din mystery box.
+      <span class="none">
+        Vores trøjer har en minimum vejledende pris på 600 kr., hvilket betyder,
+        at du får muligheden for at tilføje en bred vifte af spændende
+        fodboldtrøjer til din samling fra forskellige hold rundt omkring i
+        verden! Vi stræber altid efter at sikre vores kunders fulde tilfredshed.
+        Derfor har vi en unik fordel for dig: Du kan vælge et enkelt hold, som
+        du absolut ikke ønsker at modtage i din Mysterybox. Vi forstår, at nogle
+        hold måske ikke er dine favoritter, og vi vil gerne give dig kontrol
+        over indholdet i din mystery box.</span
+      >
     </p>
   </div>
-  <div>
+
+  <button class="knap border" id="popup-button">LÆS MERE</button>
+
+  <div id="popup-window">
     <p class="tekst2">
-      Skulle uheldet alligevel være ude, og du modtager en trøje fra det valgte
-      hold, behøver du ikke bekymre dig. Du kan nemlig inden for 14 dage
-      returnere dine varer til Matchwinner, så længe trøjen stadig er forsynet
-      med tagsene. Vi ønsker at skabe den bedst mulige oplevelse for vores
-      kunder, og det inkluderer at give dig valgmuligheder og sikkerhed ved dit
-      køb. Vores passion for fodbold og kvaliteten af vores mystery boxes er
-      vores kerneværdier, og vi er glade for at kunne dele denne spændende
-      oplevelse med dig. Udforsk vores udvalg af mystery boxes, og lad os hjælpe
-      dig med at udvide din fodboldtrøjesamling på en overraskende og fornøjelig
-      måde!
+      <span class="none">
+        Vores trøjer har en minimum vejledende pris på 600 kr., hvilket betyder,
+        at du får muligheden for at tilføje en bred vifte af spændende
+        fodboldtrøjer til din samling fra forskellige hold rundt omkring i
+        verden! Vi stræber altid efter at sikre vores kunders fulde tilfredshed.
+        Derfor har vi en unik fordel for dig: Du kan vælge et enkelt hold, som
+        du absolut ikke ønsker at modtage i din Mysterybox. Vi forstår, at nogle
+        hold måske ikke er dine favoritter, og vi vil gerne give dig kontrol
+        over indholdet i din mystery box.</span
+      >
+      Skulle uheldet alligevel være ude, og du modtager en trøje fra det valgte hold,
+      behøver du ikke bekymre dig. Du kan nemlig inden for 14 dage returnere dine
+      varer til Matchwinner, så længe trøjen stadig er forsynet med tagsene. Vi ønsker
+      at skabe den bedst mulige oplevelse for vores kunder, og det inkluderer at
+      give dig valgmuligheder og sikkerhed ved dit køb. Vores passion for fodbold
+      og kvaliteten af vores mystery boxes er vores kerneværdier, og vi er glade
+      for at kunne dele denne spændende oplevelse med dig. Udforsk vores udvalg af
+      mystery boxes, og lad os hjælpe dig med at udvide din fodboldtrøjesamling på
+      en overraskende og fornøjelig måde!
     </p>
-    <a class="knap border" href="/about">LÆS MERE</a>
+    <button class="but1" id="close-button-popup">LUK</button>
   </div>
 </div>
+
+<script src="../scripts/popup.js"></script>
 
 <style>
   @font-face {
@@ -47,10 +63,53 @@
   }
 
   @media (max-width: 600px) {
+    h2 {
+      font-family: "Inter";
+      font-size: 100%;
+      text-align: center;
+    }
+    #popup-window {
+      display: none;
+    }
+
+    .knap.border {
+      margin-top: 10px;
+    }
+
+    .knap.border {
+      margin-top: 10px;
+    }
+
+    .border {
+      border-color: #6d9a72;
+      color: #6d9a72;
+    }
     .koncept {
       width: 100%;
       margin-top: 10%;
     }
+
+    .but1 {
+      display: flex;
+      justify-content: center;
+      font-family: "Open Sans", sans-serif;
+      max-width: 115px;
+      color: #000000;
+      text-decoration: none;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 1rem;
+      border-radius: 2px;
+      border: 2px solid black;
+      background-color: white;
+      color: black;
+      padding: 10px 18px;
+      font-size: 13px;
+      cursor: pointer;
+      border-color: #6d9a72;
+      color: #6d9a72;
+    }
+
     h1 {
       font-size: 95%;
       text-align: center;
@@ -76,7 +135,7 @@
       display: flex;
       justify-content: center;
       font-family: "Open Sans", sans-serif;
-      max-width: 100px;
+      max-width: 115px;
       color: #000000;
       text-decoration: none;
       margin: auto;
@@ -107,18 +166,66 @@
       line-height: 15px;
       text-align: center;
     }
-    .tekst2 {
-      display: none;
-    }
+
     .tekst3 {
       font-family: Montserrat;
       max-width: 90%;
       text-align: left;
       margin: auto;
+      margin-top: 5%;
+    }
+    .tekst2 {
+      font-family: Montserrat;
+      max-width: 90%;
+      text-align: left;
+      margin: auto;
+      margin-top: 5%;
     }
   }
 
   @media (min-width: 600px) {
+    h2 {
+      text-align: center;
+      font-family: Inter;
+      font-size: 150%;
+    }
+    .but1 {
+      display: flex;
+      justify-content: center;
+      font-family: "Open Sans", sans-serif;
+      max-width: 150px;
+      color: #000000;
+      text-decoration: none;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 1rem;
+      border-radius: 2px;
+      border: 2px solid black;
+      background-color: white;
+      color: black;
+      padding: 10px 18px;
+      font-size: 13px;
+      cursor: pointer;
+
+      border-color: #6d9a72;
+      color: #6d9a72;
+    }
+    .but1:hover {
+      background-color: #6d9a72;
+      color: white;
+    }
+    #popup-window {
+      display: none;
+    }
+
+    .knap.border {
+      margin-top: 20px;
+    }
+
+    .knap.border {
+      margin-top: 30px;
+    }
+
     h1 {
       font-family: Inter;
       font-size: 23px;
@@ -133,6 +240,7 @@
     .koncept {
       width: 100%;
       margin-bottom: -50px;
+      margin-top: 5%;
     }
     .USP {
       position: relative;
@@ -165,21 +273,21 @@
     }
     .knap {
       display: flex;
+      justify-content: center;
       font-family: "Open Sans", sans-serif;
-      max-width: 100px;
+      max-width: 150px;
       color: #000000;
       text-decoration: none;
       margin: auto;
-      margin-top: 60px;
-      margin-bottom: 5%;
+      margin-top: 50px;
+      margin-bottom: 1rem;
       border-radius: 2px;
       border: 2px solid black;
       background-color: white;
       color: black;
-      padding: 14px 28px;
-      font-size: 16px;
+      padding: 10px 18px;
+      font-size: 13px;
       cursor: pointer;
-      margin-left: 33%;
     }
     .border {
       border-color: #6d9a72;
@@ -188,15 +296,6 @@
     .border:hover {
       background-color: #6d9a72;
       color: white;
-    }
-    .tekst2 {
-      margin-top: 10%;
-      margin-left: 35px;
-    }
-
-    .tekst3 {
-      margin-top: 5%;
-      margin-right: 35px;
     }
   }
 </style>

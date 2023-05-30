@@ -1,14 +1,13 @@
-var showMoreButton = document.getElementById("show-more-button");
-var overlay = document.getElementById("overlay");
+var popupButton = document.getElementById("popup-button");
 var popupWindow = document.getElementById("popup-window");
-var closeButton = document.getElementById("close-button");
+var closeButton = document.getElementById("close-button-popup");
 
-showMoreButton.addEventListener("click", function () {
-  overlay.style.display = "block";
+popupButton.addEventListener("click", function () {
+  popupButton.style.display = "none";
   popupWindow.style.display = "block";
 });
 
 closeButton.addEventListener("click", function () {
-  overlay.style.display = "none";
+  popupButton.style.display = "block";
   popupWindow.style.display = "none";
 });
