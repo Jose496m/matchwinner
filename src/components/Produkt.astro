@@ -6,10 +6,10 @@ const { Pris, image, Titler, Beskrivelse } = Astro.props;
   <img class="billeder" src={image} alt="billede1" />
   <div class="tekst-container">
     <h2>{Titler}</h2>
-    <p>{Pris}</p>
+    <h3>{Pris}</h3>
     <p>{Beskrivelse}</p>
     <div class="tekst1"></div>
-    <p>Vælg størrelse</p>
+    <h4>Vælg størrelse</h4>
 
     <div class="sizes-container">
       <div class="size-item">
@@ -35,8 +35,8 @@ const { Pris, image, Titler, Beskrivelse } = Astro.props;
       </div>
     </div>
     <section>
-      <div class="knap border">
-        <p>Læg i kurv</p>
+      <div class="knap">
+        <h4>Læg i kurv</h4>
       </div>
     </section>
 
@@ -55,7 +55,7 @@ const { Pris, image, Titler, Beskrivelse } = Astro.props;
           margin: 20%;
           margin-top: 0%;
         }
-        h1 {
+        h2 {
           text-align: center;
           font-family: Inter;
         }
@@ -68,19 +68,21 @@ const { Pris, image, Titler, Beskrivelse } = Astro.props;
         }
         .sizes-container {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
           gap: 10%;
           cursor: pointer;
-          margin-left: -2%;
+          margin: 7%;
         }
         .border {
+          background-color: #e8efe5;
+          text-align: center;
+          padding: 10%;
         }
         h4 {
           font-family: montserrat;
-          font-weight: lighter;
-          line-height: 20px;
-          padding: 1%;
           margin-top: 14%;
+          text-align: center;
+          margin-top: 5%;
         }
 
         nav {
@@ -133,6 +135,21 @@ const { Pris, image, Titler, Beskrivelse } = Astro.props;
           max-width: 270px;
           margin: auto;
           margin-top: 3%;
+        }
+        .billeder {
+          width: 80%;
+          margin: 10%;
+          margin-top: auto;
+        }
+        h3 {
+          text-align: center;
+          font-family: Montserrat;
+        }
+        p {
+          font-family: Montserrat;
+          margin-top: 5%;
+          width: 86%;
+          margin: 7%;
         }
       }
 
