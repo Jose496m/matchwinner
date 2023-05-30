@@ -44,12 +44,25 @@
   </div>
 </div>
 
-<h2 class="bestsellers">BESTSELLERS</h2>
-<section class="grid_1-1">
+<section class="background">
   <div>
-    <img class="leg" src="/img/aboleg.webp" alt="den legendariske box" />
+    <h3>BESTSELLERS</h3>
   </div>
-  <div><img class="uni" src="/img/abounik.webp" alt="den unikke box" /></div>
+
+  <div class="grid_1-1">
+    <div>
+      <a href=""><img class="leg" src="/img/aboleg1.webp" alt="billede5" /></a>
+      <h2 class="abbo">1 LEGENDARISK BOX <br /> OM MÅNEDEN</h2>
+      <p class="pris">349 DKK</p>
+    </div>
+
+    <div>
+      <a href=""><img class="uni" src="/img/abounik1.webp" alt="billeder6" /></a
+      >
+      <h2 class="obba">1 UNIK BOX <br /> OM MÅNEDEN</h2>
+      <p class="sirp">349 DKK</p>
+    </div>
+  </div>
 </section>
 
 <script src="../scripts/popup.js"></script>
@@ -73,6 +86,57 @@
     margin-top: -60px;
   }
   @media (min-width: 600px) {
+    h3 {
+      text-align: center;
+      font-family: Inter;
+      font-size: xx-large;
+      padding-top: 2rem;
+      margin-top: -4%;
+    }
+    .background {
+      padding-bottom: 1%;
+      margin-bottom: 6rem;
+      margin-top: 5%;
+    }
+    .abbo {
+      color: white;
+      font-size: 140%;
+      margin-top: -35%;
+      margin-left: 15%;
+    }
+    .obba {
+      color: white;
+      font-size: 140%;
+      margin-top: -35%;
+      margin-left: -12%;
+    }
+    .pris {
+      color: #6d9a72;
+      font-family: montserrat;
+      margin-left: 51%;
+      margin-top: -3%;
+    }
+    .sirp {
+      color: #6d9a72;
+      font-family: montserrat;
+      margin-left: 38%;
+      margin-top: -3%;
+    }
+
+    img {
+      display: flex;
+      align-items: center;
+      width: 70%;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      max-width: 1100px;
+      margin: auto;
+      margin-bottom: 50px;
+    }
     .border:hover {
       background-color: #6d9a72;
       color: white;
@@ -140,11 +204,11 @@
     }
 
     .knap.border {
-      margin-top: 10px;
+      margin-top: 60px;
     }
 
     .knap.border {
-      margin-top: 10px;
+      margin-top: 60px;
     }
 
     .tekst {
@@ -154,18 +218,13 @@
       margin-bottom: 1%;
     }
 
-    .tekst3 {
-      margin-top: -3%;
-      max-width: 720px;
-    }
-
     .green {
       background-color: #e8efe5;
       padding-bottom: 10px;
       margin-top: -20px;
     }
     .bpa {
-      padding-top: 30px;
+      padding-top: 45px;
       margin-bottom: 1rem;
     }
     h1 {
@@ -181,6 +240,7 @@
       font-size: large;
       font-family: Montserrat;
       font-weight: 470;
+      margin-top: 3%;
     }
     .bestsellers {
       margin-top: 60px;
@@ -194,7 +254,7 @@
       margin: auto;
       margin-top: 1%;
       line-height: 32px;
-      max-width: 600px;
+      max-width: 720px;
       font-family: Montserrat;
       margin-bottom: -10px;
     }
@@ -211,7 +271,7 @@
     img {
       display: flex;
       align-items: center;
-      width: 50%;
+      width: 70%;
       height: auto;
       margin: auto;
       margin-bottom: 10px;
@@ -226,12 +286,56 @@
       margin-bottom: 4rem;
       transition: transform 0.2s;
     }
-    .leg:hover,
-    .uni:hover {
-      transform: scale(1.12);
+    .tekst3 {
+      margin-top: -2%;
     }
   }
   @media (max-width: 600px) {
+    .abbo {
+      color: white;
+      font-size: 80%;
+      margin-top: -75%;
+      margin-left: 13%;
+    }
+    .obba {
+      color: white;
+      font-size: 80%;
+      margin-top: -75%;
+      margin-left: -11%;
+    }
+    .pris {
+      color: #6d9a72;
+      font-family: montserrat;
+      margin-left: 15%;
+      margin-top: -3%;
+      font-size: 80%;
+    }
+    .sirp {
+      color: #6d9a72;
+      font-family: montserrat;
+      margin-left: -9%;
+      margin-top: -3%;
+      font-size: 80%;
+    }
+    .tekst5 {
+      font-weight: 300;
+      margin-top: -70px;
+      max-width: 300px;
+      text-align: center;
+      margin: auto;
+      padding: 0px;
+    }
+    .grid_1-1 {
+      text-align: center;
+      gap: 5px;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+    .grid_1-1 img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
     p {
       margin: auto;
       max-width: 350px;
@@ -368,6 +472,7 @@
       margin-top: -3px;
       margin-bottom: 25px;
       max-width: 380px;
+      margin-top: 2%;
     }
 
     .bestsellers {
