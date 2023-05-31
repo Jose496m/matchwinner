@@ -37,7 +37,7 @@ console.log(data);
     <Chat />
     <Shopbillede />
     <section class="beskrivelse">
-      <div class="grid_1-1-1-1">
+      <div class="grid_1-1-1-1 grid_2-2">
         {
           data.map((product) => (
             <Shop
@@ -68,13 +68,14 @@ console.log(data);
     margin-top: 5%;
   }
   @media (max-width: 600px) {
-    .grid_1-1-1-1 {
+    .grid_2-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin: auto;
-      max-width: 50%;
+      max-width: 300px;
       margin-top: 5%;
       margin-bottom: 5%;
+      height: 300px;
     }
   }
 </style>
