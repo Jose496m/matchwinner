@@ -8,16 +8,12 @@ import Chat from "../components/Chat.astro";
 import Shopbillede from "../components/Shopbillede.astro";
 import Abonnementshop from "../components/Abonnementshop.astro";
 
-const data = await fetch(
-  "https://lhlqzgpvydlodjfvvbru.supabase.co/rest/v1/Matchwinner",
-  {
-    method: "GET",
-    headers: {
-      apikey:
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxobHF6Z3B2eWRsb2RqZnZ2YnJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ0Nzk0MDMsImV4cCI6MjAwMDA1NTQwM30.M5McXqusKfxEHBGbSXw15LL7maXShpRl7-Q-7oMgWeI",
-    },
-  }
-).then((res) => res.json());
+const data = await fetch("https://lhlqzgpvydlodjfvvbru.supabase.co/rest/v1/Matchwinner", {
+  method: "GET",
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxobHF6Z3B2eWRsb2RqZnZ2YnJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ0Nzk0MDMsImV4cCI6MjAwMDA1NTQwM30.M5McXqusKfxEHBGbSXw15LL7maXShpRl7-Q-7oMgWeI",
+  },
+}).then((res) => res.json());
 
 console.log(data);
 ---
@@ -38,17 +34,7 @@ console.log(data);
     <Shopbillede />
     <section class="beskrivelse">
       <div class="grid_1-1-1-1 grid_2-2">
-        {
-          data.map((product) => (
-            <Shop
-              image={`/img/${product.image}`}
-              Titler={product.Titler}
-              Beskrivelse={product.Beskrivelse}
-              Pris={product.Pris}
-              slug={product.slug}
-            />
-          ))
-        }
+        {data.map((product) => <Shop image={`/img/${product.image}`} Titler={product.Titler} Beskrivelse={product.Beskrivelse} Pris={product.Pris} slug={product.slug} />)}
       </div>
     </section>
 
