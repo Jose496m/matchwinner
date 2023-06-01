@@ -1,32 +1,33 @@
-<div class="chat"> 
-    <p>Chat med os!</p>
+<div class="chat">
+  <p>Chat med os!</p>
 </div>
 
 <style>
-    .chat{
-        height: 50px;
-  width: 175px;
-  background-color: #c2d5c3;
-  border-radius: 25px 0px 0px 25px;
-  position: sticky;
-  left: 90%;
-  top: 90%;
+  .chat {
+    height: 50px;
+    width: 175px;
+    background-color: #c2d5c3;
+    border-radius: 25px 0px 0px 25px;
+    position: sticky;
+    left: 90%;
+    top: 90%;
+    z-index: 8;
+  }
+  p {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: larger;
+    padding: 13px;
+  }
+  @media (max-width: 600px) {
+    .chat {
+      height: 40px;
+      width: 140px;
+      top: 90%;
     }
-    p{
-        text-align: center;
-        font-family: Montserrat;
-        font-size: larger;
-        padding: 13px;
+    p {
+      font-size: 93%;
+      padding: 11px;
     }
-    @media (max-width: 600px){
-        .chat{
-          height: 40px;
-          width: 140px;
-          top: 90%;
-        }
-        p{
-            font-size: 93%;
-            padding: 11px;
-        }
-    }
+  }
 </style>
