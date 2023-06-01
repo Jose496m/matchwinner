@@ -27,277 +27,270 @@
   <div id="popup-window">
     <p class="tekst2">
       <span class="none">
-        Vores trøjer har en minimum vejledende pris på 600 kr., hvilket betyder,
-        at du får muligheden for at tilføje en bred vifte af spændende
-        fodboldtrøjer til din samling fra forskellige hold rundt omkring i
-        verden! Vi stræber altid efter at sikre vores kunders fulde tilfredshed.
-        Derfor har vi en unik fordel for dig: Du kan vælge et enkelt hold, som
-        du absolut ikke ønsker at modtage i din Mysterybox. Vi forstår, at nogle
-        hold måske ikke er dine favoritter, og vi vil gerne give dig kontrol
-        over indholdet i din mystery box.</span
-      >
-      Skulle uheldet alligevel være ude, og du modtager en trøje fra det valgte hold,
-      behøver du ikke bekymre dig. Du kan nemlig inden for 14 dage returnere dine
-      varer til Matchwinner, så længe trøjen stadig er forsynet med tagsene. Vi ønsker
-      at skabe den bedst mulige oplevelse for vores kunder, og det inkluderer at
-      give dig valgmuligheder og sikkerhed ved dit køb. Vores passion for fodbold
-      og kvaliteten af vores mystery boxes er vores kerneværdier, og vi er glade
-      for at kunne dele denne spændende oplevelse med dig. Udforsk vores udvalg af
-      mystery boxes, og lad os hjælpe dig med at udvide din fodboldtrøjesamling på
-      en overraskende og fornøjelig måde!
+        Skulle uheldet alligevel være ude, og du modtager en trøje fra det
+        valgte hold, behøver du ikke bekymre dig. Du kan nemlig inden for 14
+        dage returnere dine varer til Matchwinner, så længe trøjen stadig er
+        forsynet med tagsene. Vi ønsker at skabe den bedst mulige oplevelse for
+        vores kunder, og det inkluderer at give dig valgmuligheder og sikkerhed
+        ved dit køb. Vores passion for fodbold og kvaliteten af vores mystery
+        boxes er vores kerneværdier, og vi er glade for at kunne dele denne
+        spændende oplevelse med dig. Udforsk vores udvalg af mystery boxes, og
+        lad os hjælpe dig med at udvide din fodboldtrøjesamling på en
+        overraskende og fornøjelig måde!
+      </span>
+      <button class="but1" id="close-button-popup">LUK</button>
     </p>
-    <button class="but1" id="close-button-popup">LUK</button>
   </div>
+
+  <script src="../scripts/popup.js"></script>
+
+  <style>
+    @font-face {
+      font-family: Inter;
+      src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+    }
+    @font-face {
+      font-family: Montserrat;
+      src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-family: "Inter";
+        font-size: 100%;
+        text-align: center;
+        margin-top: 5%;
+      }
+      #popup-window {
+        display: none;
+      }
+
+      .knap.border {
+        margin-top: 10px;
+      }
+
+      .knap.border {
+        margin-top: 10px;
+      }
+
+      .border {
+        border-color: #6d9a72;
+        color: #6d9a72;
+      }
+      .koncept {
+        width: 102%;
+        margin-top: 10%;
+      }
+
+      .but1 {
+        display: flex;
+        justify-content: center;
+        font-family: "Open Sans", sans-serif;
+        max-width: 115px;
+        color: #000000;
+        text-decoration: none;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 1rem;
+        border-radius: 2px;
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        padding: 10px 18px;
+        font-size: 13px;
+        cursor: pointer;
+        border-color: #6d9a72;
+        color: #6d9a72;
+      }
+
+      h1 {
+        font-size: 95%;
+        text-align: center;
+        font-family: "Inter";
+      }
+      p {
+        text-align: center;
+        margin: auto;
+        margin-top: 1%;
+        line-height: 24px;
+        max-width: 320px;
+        font-family: Montserrat;
+        margin-bottom: -20px;
+        font-size: 14px;
+      }
+      .tekst {
+        background-color: #e8efe5;
+        margin: -1%;
+        padding: 3%;
+        margin-bottom: 6%;
+      }
+      .knap {
+        display: flex;
+        justify-content: center;
+        font-family: "Open Sans", sans-serif;
+        max-width: 115px;
+        color: #000000;
+        text-decoration: none;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 1rem;
+        border-radius: 2px;
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        padding: 10px 18px;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      .border {
+        border-color: #6d9a72;
+        color: #6d9a72;
+      }
+      .USP {
+        position: relative;
+        font-family: Montserrat;
+        font-size: 70%;
+        margin: auto;
+        margin-top: -21%;
+        margin-bottom: 60px;
+        max-width: 250px;
+        font-weight: 650;
+        color: white;
+        line-height: 15px;
+        text-align: center;
+      }
+
+      .tekst3 {
+        font-family: Montserrat;
+        max-width: 90%;
+        text-align: left;
+        margin: auto;
+        margin-top: 5%;
+      }
+      .tekst2 {
+        font-family: Montserrat;
+        max-width: 90%;
+        text-align: left;
+        margin: auto;
+        margin-top: 5%;
+      }
+    }
+
+    @media (min-width: 600px) {
+      h2 {
+        text-align: center;
+        font-family: Inter;
+        font-size: 150%;
+      }
+      .but1 {
+        display: flex;
+        justify-content: center;
+        font-family: "Open Sans", sans-serif;
+        max-width: 150px;
+        color: #000000;
+        text-decoration: none;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 1rem;
+        border-radius: 2px;
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        padding: 10px 18px;
+        font-size: 13px;
+        cursor: pointer;
+
+        border-color: #6d9a72;
+        color: #6d9a72;
+      }
+      .but1:hover {
+        background-color: #6d9a72;
+        color: white;
+      }
+      #popup-window {
+        display: none;
+      }
+
+      .knap.border {
+        margin-top: 20px;
+      }
+
+      .knap.border {
+        margin-top: 30px;
+      }
+
+      h1 {
+        font-family: Inter;
+        font-size: 23px;
+        margin-left: 139px;
+        margin-top: 45%;
+      }
+      .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        background-color: #e8efe5;
+      }
+      .koncept {
+        width: 100%;
+        margin-bottom: -50px;
+        margin-top: 5%;
+      }
+      .USP {
+        position: relative;
+        font-family: Montserrat;
+        font-size: 260%;
+        margin-top: -16.5%;
+        margin-bottom: 15.5%;
+        margin-left: auto;
+        max-width: 800px;
+        text-align: left;
+        font-weight: 650;
+        color: white;
+        line-height: 50px;
+      }
+      p {
+        font-family: "Monsserrat";
+
+        margin: auto;
+        margin-top: 1%;
+        line-height: 32px;
+        max-width: 600px;
+        font-family: Montserrat;
+        margin-bottom: -10px;
+      }
+      .tekst {
+        background-color: #e8efe5;
+
+        padding: 3%;
+        margin-bottom: 1%;
+      }
+      .knap {
+        display: flex;
+        justify-content: center;
+        font-family: "Open Sans", sans-serif;
+        max-width: 150px;
+        color: #000000;
+        text-decoration: none;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 1rem;
+        border-radius: 2px;
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        padding: 10px 18px;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      .border {
+        border-color: #6d9a72;
+        color: #6d9a72;
+      }
+      .border:hover {
+        background-color: #6d9a72;
+        color: white;
+      }
+    }
+  </style>
 </div>
-
-<script src="../scripts/popup.js"></script>
-
-<style>
-  @font-face {
-    font-family: Inter;
-    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
-  }
-  @font-face {
-    font-family: Montserrat;
-    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
-  }
-
-  @media (max-width: 600px) {
-    h2 {
-      font-family: "Inter";
-      font-size: 100%;
-      text-align: center;
-      margin-top: 5%;
-    }
-    #popup-window {
-      display: none;
-    }
-
-    .knap.border {
-      margin-top: 10px;
-    }
-
-    .knap.border {
-      margin-top: 10px;
-    }
-
-    .border {
-      border-color: #6d9a72;
-      color: #6d9a72;
-    }
-    .koncept {
-      width: 102%;
-      margin-top: 10%;
-    }
-
-    .but1 {
-      display: flex;
-      justify-content: center;
-      font-family: "Open Sans", sans-serif;
-      max-width: 115px;
-      color: #000000;
-      text-decoration: none;
-      margin: auto;
-      margin-top: 50px;
-      margin-bottom: 1rem;
-      border-radius: 2px;
-      border: 2px solid black;
-      background-color: white;
-      color: black;
-      padding: 10px 18px;
-      font-size: 13px;
-      cursor: pointer;
-      border-color: #6d9a72;
-      color: #6d9a72;
-    }
-
-    h1 {
-      font-size: 95%;
-      text-align: center;
-      font-family: "Inter";
-    }
-    p {
-      text-align: center;
-      margin: auto;
-      margin-top: 1%;
-      line-height: 24px;
-      max-width: 320px;
-      font-family: Montserrat;
-      margin-bottom: -20px;
-      font-size: 14px;
-    }
-    .tekst {
-      background-color: #e8efe5;
-      margin: -1%;
-      padding: 3%;
-      margin-bottom: 6%;
-    }
-    .knap {
-      display: flex;
-      justify-content: center;
-      font-family: "Open Sans", sans-serif;
-      max-width: 115px;
-      color: #000000;
-      text-decoration: none;
-      margin: auto;
-      margin-top: 50px;
-      margin-bottom: 1rem;
-      border-radius: 2px;
-      border: 2px solid black;
-      background-color: white;
-      color: black;
-      padding: 10px 18px;
-      font-size: 13px;
-      cursor: pointer;
-    }
-    .border {
-      border-color: #6d9a72;
-      color: #6d9a72;
-    }
-    .USP {
-      position: relative;
-      font-family: Montserrat;
-      font-size: 70%;
-      margin: auto;
-      margin-top: -21%;
-      margin-bottom: 60px;
-      max-width: 250px;
-      font-weight: 650;
-      color: white;
-      line-height: 15px;
-      text-align: center;
-    }
-
-    .tekst3 {
-      font-family: Montserrat;
-      max-width: 90%;
-      text-align: left;
-      margin: auto;
-      margin-top: 5%;
-    }
-    .tekst2 {
-      font-family: Montserrat;
-      max-width: 90%;
-      text-align: left;
-      margin: auto;
-      margin-top: 5%;
-    }
-  }
-
-  @media (min-width: 600px) {
-    h2 {
-      text-align: center;
-      font-family: Inter;
-      font-size: 150%;
-    }
-    .but1 {
-      display: flex;
-      justify-content: center;
-      font-family: "Open Sans", sans-serif;
-      max-width: 150px;
-      color: #000000;
-      text-decoration: none;
-      margin: auto;
-      margin-top: 50px;
-      margin-bottom: 1rem;
-      border-radius: 2px;
-      border: 2px solid black;
-      background-color: white;
-      color: black;
-      padding: 10px 18px;
-      font-size: 13px;
-      cursor: pointer;
-
-      border-color: #6d9a72;
-      color: #6d9a72;
-    }
-    .but1:hover {
-      background-color: #6d9a72;
-      color: white;
-    }
-    #popup-window {
-      display: none;
-    }
-
-    .knap.border {
-      margin-top: 20px;
-    }
-
-    .knap.border {
-      margin-top: 30px;
-    }
-
-    h1 {
-      font-family: Inter;
-      font-size: 23px;
-      margin-left: 139px;
-      margin-top: 45%;
-    }
-    .grid_1-1 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: auto;
-      background-color: #e8efe5;
-    }
-    .koncept {
-      width: 100%;
-      margin-bottom: -50px;
-      margin-top: 5%;
-    }
-    .USP {
-      position: relative;
-      font-family: Montserrat;
-      font-size: 260%;
-      margin-top: -16.5%;
-      margin-bottom: 15.5%;
-      margin-left: auto;
-      max-width: 800px;
-      text-align: left;
-      font-weight: 650;
-      color: white;
-      line-height: 50px;
-    }
-    p {
-      font-family: "Monsserrat";
-
-      margin: auto;
-      margin-top: 1%;
-      line-height: 32px;
-      max-width: 600px;
-      font-family: Montserrat;
-      margin-bottom: -10px;
-    }
-    .tekst {
-      background-color: #e8efe5;
-
-      padding: 3%;
-      margin-bottom: 1%;
-    }
-    .knap {
-      display: flex;
-      justify-content: center;
-      font-family: "Open Sans", sans-serif;
-      max-width: 150px;
-      color: #000000;
-      text-decoration: none;
-      margin: auto;
-      margin-top: 50px;
-      margin-bottom: 1rem;
-      border-radius: 2px;
-      border: 2px solid black;
-      background-color: white;
-      color: black;
-      padding: 10px 18px;
-      font-size: 13px;
-      cursor: pointer;
-    }
-    .border {
-      border-color: #6d9a72;
-      color: #6d9a72;
-    }
-    .border:hover {
-      background-color: #6d9a72;
-      color: white;
-    }
-  }
-</style>
